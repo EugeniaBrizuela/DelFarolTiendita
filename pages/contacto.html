@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/LOGO.jpeg" type="image/x-icon">
+    <title>Del Farol Tiendita</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!--INICIO DE HEADER-->
+<header class="main__background__index main__background__index--contact">
+    <div class="main__header">
+        <img class="header__logo" src="../img/LOGO.jpeg" alt="Imagen del logo del emprendimiento" width="300">
+        <nav>
+            <ul>
+                <li><a class="header__item" href="../index.html">Inicio</a></li>
+                <li><a class="header__item" href="./about.html">About</a></li>
+                <li><a class="header__item" href="./galeria.html">Galería</a></li>
+                <li><a class="header__item" href="./tutoriales.html">Tutoriales</a></li>
+                <li><a class="header__item header__item--bold" href="./contacto.html">Contacto</a></li>
+            </ul> 
+        </nav>
+    </div>   
+<!--INICIO SECCIÓN CONTACTO-->
+    <section>
+        <h1>Contacto</h1>
+        <h2>Contactate con nosotras para realizar un pedido o consultas.</h2>
+    </section>
+</header>
+<!--FIN DE HEADER-->
+    <section class="main__background__contact1">
+        <h3 class="color__2">Realiza tu consulta</h3>
+        <form action="" method="POST">
+            <fieldset class="colorp__2">
+                <label for="">Nombre:</label>
+                <input type="text" name="name" placeholder="Ingresa tu nombre" required><br>
+                <label for="">Apellido:</label>
+                <input type="text" name="last_name" placeholder="Ingresa tu apellido" required><br>
+                <label for="">Email:</label>
+                <input type="email" name="email" placeholder="Ingresa tu email" required><br>
+                <label for="">Ingresa tu consulta</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa tu consulta"></textarea><br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </fieldset>
+        </form>
+    </section>
+    <section class="main__background__contact1 main__background__contact1--modified">
+        <h3>Realiza tu pedido</h3>
+        <form action="" method="POST">
+            <fieldset id="pedido">
+                <label for="">Nombre:</label>
+                <input type="text" name="name" placeholder="Ingresa tu nombre" required><br>
+                <label for="">Apellido:</label>
+                <input type="text" name="last_name" placeholder="Ingresa tu apellido" required><br>
+                <label for="">Email:</label>
+                <input type="email" name="email" placeholder="Ingresa tu email" required><br>
+                <label for="text">Dirección:</label>
+                <input type="text" name="adress" placeholder="Ingresa tu dirección" required><br>
+                <label for="text">Código postal:</label>
+                <input type="text" name="cod" placeholder="Ingresa tu código postal" required><br>
+                <label for="text">Selecciona un producto:</label>
+                <select name="text" id="product">
+                    <option value="Conejitas bailarinas">Conejita bailarina</option>
+                    <option value="Señor conejo">Señor conejo</option>
+                    <option value="Señor Osi">Señor Osi</option>
+                    <option value="Plato pintado">Plato pintado en porcelana</option>
+                </select>
+                <label for="quantity">Cantidad:</label>
+                <input type="number" name="quantity" id="quantity" min="1" max="3"><br>
+                <label for="text">Método de pago:</label>
+                <input type="text" name="method" id="method"><br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>   
+        </form>        
+    </section>
+<!--FIN SECCIÓN CONTACTO-->
+
+<!--INICIO DE FOOTER-->
+<footer>
+    <h1 class="footer__title">Del Farol Tiendita</h1>
+    <nav>
+        <a href="https://www.facebook.com/profile.php?id=100016201728347" target="_blank"><img src="../img/facebook.jpg" alt="Imagen logo facebook" width="30"></a>
+        <a href="https://www.instagram.com/delfaroltiendita/" target="_blank"> <img src="../img/instagram.jpg" alt="imagen logo instagram" width="30"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.jpg" alt="imagen logo whatsapp" width="30"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSckKnwCDcTQkPZMZpcztjnGbPJqDNWHlvfqbqBlBKrwzdtrGfTNZQkKzNxrtLgRdRqHhS" target="_blank"><img src="../img/gmail.jpg" alt="imagen logo gmail" width="30"></a>
+    </nav>
+    <h4>Dirección:Los Olivos 389, Cipolletti, Río Negro, Argentina<br>Teléfono de contacto:2994763451<br>Dirección de mail:delfaroltiendita@gmail.com</h4>
+    <h5>©Copyright - Todos los derechos reservados</h5>
+</footer>
+<!--FIN DE FOOTER--> 
+
+</body>
+</html>
