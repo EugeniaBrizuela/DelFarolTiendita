@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/LOGO.jpeg" type="image/x-icon">
     <title>Del Farol Tiendita</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <!--INICIO DE HEADER-->
 <header class="main__background__index">
-    <div class="main__header">
+    <div data-aos="zoom-out-down" class="main__header">
         <img class="header__logo" src="./img/LOGO.jpeg" alt="Imagen del logo del emprendimiento" >
         <nav>
             <ul>
@@ -25,9 +27,9 @@
     </div>
 <!--INICIO SECCIÓN BIENVENIDA-->
     <section>
-        <h1>Del Farol Tiendita</h1>
-        <h2>Crochet y porcelanas.</h2> 
-        <article class="main__welcome">
+        <h1 data-aos="zoom-out-down">Del Farol Tiendita</h1>
+        <h2 data-aos="zoom-out-down">Crochet y porcelanas.</h2> 
+        <article data-aos="zoom-in-left" class="main__welcome">
             <h3>Emprendimiento familiar</h3>
             <div class="main__text">
                 <p> Este es un proyecto familiar con el objetivo de regalar cosas hechas a mano a niños/bebes.</p>
@@ -44,15 +46,15 @@
 <main>
     <section class="main__background__primary">
         <div class="grid__area">
-            <h3 class="main__titulo">Galería</h3>
-            <img id="img_bolso" class="main__image" src="./img/Bolsito.jpg" alt="Imagen de bolsito">
-            <img id="img_conejitas" class="main__image" src="./img/Conejitas.jpg" alt="Imagen de conejitas">
-            <img id="img_bolsa" class="main__image" src="./img/Bolsa ami.jpg" alt="Imagen bolsa amigurumis">
-            <img id="img_osi" class="main__image" src="./img/Senor Osi 1.jpg" alt="Imagen Señor Osi">
-            <img id="img_conejo" class="main__image" src="./img/Señor conejo.jpg" alt="Imagen de señor conejo">
-            <img id="img_plato" class="main__image" src="./img/plato con conejita.jpg" alt="Imagen de platito pintado en porcelana">
+            <h3 data-aos="zoom-in-right" class="main__titulo">Galería</h3>
+            <img data-aos="zoom-in-right" id="img_bolso" class="main__image" src="./img/Bolsito.jpg" alt="Imagen de bolsito">
+            <img data-aos="zoom-in-up" id="img_conejitas" class="main__image" src="./img/Conejitas.jpg" alt="Imagen de conejitas">
+            <img data-aos="zoom-out-up" id="img_bolsa" class="main__image" src="./img/Bolsa ami.jpg" alt="Imagen bolsa amigurumis">
+            <img data-aos="zoom-in-left" id="img_osi" class="main__image" src="./img/Senor Osi 1.jpg" alt="Imagen Señor Osi">
+            <img data-aos="zoom-in-right" id="img_conejo" class="main__image" src="./img/Señor conejo.jpg" alt="Imagen de señor conejo">
+            <img data-aos="zoom-in-left" id="img_plato" class="main__image" src="./img/plato con conejita.jpg" alt="Imagen de platito pintado en porcelana">
         </div>
-        <a class="button button--modified" href="./pages/galeria.html">Ver más</a>  
+        <a data-aos="zoom-in-right" class="button button--modified" href="./pages/galeria.html">Ver más</a>  
     </section>
 </main>
 <!--FIN SECCIÓN GALERÍA-->
@@ -60,7 +62,7 @@
 <!--INICIO SECCIÓN TUTORIAL-CONTACTO-->
 <main>
     <section class="main__background__primary main__background__primary--color2">
-        <article class="main__tutorials">
+        <article data-aos="zoom-in-right"  class="main__tutorials">
             <h3>Tutoriales</h3>
             <ol>  
                 <li class="tutorial__item">Manta bebés</li>
@@ -69,7 +71,7 @@
             <img id="tejiendo" class="main__image" src="./img/tejiendo.jpg" alt="Imagen tejiedo">
             <a class="button" href="./pages/tutoriales.html">Ver más</a>
         </article>   
-        <article class="main__tutorials main__tutorials--modified">
+        <article data-aos="zoom-in-left"  class="main__tutorials main__tutorials--modified">
             <h3>Contacto</h3>
             <p>Contactate con nosotras para acordar algún pedido o para consultar sobre lo que quieras.</p>
             <a class="button" href="./pages/contacto.html">Ver más</a>
@@ -80,17 +82,20 @@
 
 <!--INICIO DE FOOTER-->
 <footer>
-    <h1 class="footer__title">Del Farol Tiendita</h1>
-    <nav>
+    <h1 data-aos="zoom-out-up"  class="footer__title">Del Farol Tiendita</h1>
+    <nav data-aos="zoom-out-up" >
         <a href="https://www.facebook.com/profile.php?id=100016201728347" target="_blank"><img src="./img/facebook.jpg" alt="Imagen logo facebook" width="30"></a>
         <a href="https://www.instagram.com/delfaroltiendita/" target="_blank"> <img src="./img/instagram.jpg" alt="imagen logo instagram" width="30"></a>
         <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp.jpg" alt="imagen logo whatsapp" width="30"></a>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSckKnwCDcTQkPZMZpcztjnGbPJqDNWHlvfqbqBlBKrwzdtrGfTNZQkKzNxrtLgRdRqHhS" target="_blank"><img src="./img/gmail.jpg" alt="imagen logo gmail" width="30"></a>
     </nav>
-    <h4>Dirección:Los Olivos 389, Cipolletti, Río Negro, Argentina<br>Teléfono de contacto:2994763451<br>Dirección de mail:delfaroltiendita@gmail.com</h4>
-    <h5>©Copyright - Todos los derechos reservados</h5>
+    <h4 data-aos="zoom-out-up" >Dirección:Los Olivos 389, Cipolletti, Río Negro, Argentina<br>Teléfono de contacto:2994763451<br>Dirección de mail:delfaroltiendita@gmail.com</h4>
+    <h5 data-aos="fade-up">©Copyright - Todos los derechos reservados</h5>
 </footer>
 <!--FIN DE FOOTER-->
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
