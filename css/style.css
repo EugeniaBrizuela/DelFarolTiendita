@@ -149,7 +149,7 @@ h5{
     font-size: var(--text-xsmall);
     color: var(--text-color-secundary);
     text-align: center;
-    padding: var(--spacing-xxsmall);
+    padding: var(--spacing-xsmall);
     margin-bottom: var(--spacing-small);
 }
 
@@ -251,13 +251,15 @@ p{
     color: var(--text-color-primary);
     background-color: var(--color-button-1);
     text-align:center;
-    margin-top: var(--spacing-items-header)
+    margin-top: var(--spacing-items-header);
+    transition: all .5s linear;
 }
 
 .button--modified{
     color: var(--text-color-secundary);
     background-color: var(--color-button-2);
     margin: var(--spacing-border-logo);
+    transition: all .2s linear;
 }
 
 .main__welcome{
@@ -338,7 +340,7 @@ p{
     grid-column: 6 / 12;
     grid-row: 1 / 4;
     width: 80% ;
-    margin-top: var(--spacing-small); 
+    margin-top: var(--spacing-small);
 }
 
 #img_osi{
@@ -537,6 +539,7 @@ ol{
     text-decoration: none;
     font-weight: bold;
     color: var(--text-color-primary);
+    transition: all 1s text-decoration;
 }
 
 .main__background__contact1{
@@ -1222,11 +1225,17 @@ footer nav a{
     color: var(--text-color-primary-trans);
 }
 
+.button:hover{
+    font-size: var(--text-large);
+}
 
+.button--modified:hover{
+    font-size: var(--text-large);
+}
 
-
-
-
+.tutorial__item:hover{
+    text-decoration: underline;
+}
 
 
 

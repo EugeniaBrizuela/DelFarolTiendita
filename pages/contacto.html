@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/LOGO.jpeg" type="image/x-icon">
     <title>Del Farol Tiendita</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <!--INICIO DE HEADER-->
 <header class="main__background__index main__background__index--contact">
-    <div class="main__header">
+    <div data-aos="zoom-out-down" class="main__header">
         <img class="header__logo" src="../img/LOGO.jpeg" alt="Imagen del logo del emprendimiento" width="300">
         <nav>
             <ul>
@@ -25,15 +27,15 @@
     </div>   
 <!--INICIO SECCIÓN CONTACTO-->
     <section>
-        <h1>Contacto</h1>
-        <h2>Contactate con nosotras para realizar un pedido o consultas.</h2>
+        <h1 data-aos="zoom-out-down">Contacto</h1>
+        <h2 data-aos="zoom-out-down">Contactate con nosotras para realizar un pedido o consultas.</h2>
     </section>
 </header>
 <!--FIN DE HEADER-->
     <section class="main__background__contact1">
-        <h3 class="color__2">Realiza tu consulta</h3>
+        <h3 data-aos="zoom-out-up" class="color__2">Realiza tu consulta</h3>
         <form action="" method="POST">
-            <fieldset class="colorp__2">
+            <fieldset data-aos="zoom-out-up" class="colorp__2">
                 <label for="">Nombre:</label>
                 <input type="text" name="name" placeholder="Ingresa tu nombre" required><br>
                 <label for="">Apellido:</label>
@@ -48,9 +50,9 @@
         </form>
     </section>
     <section class="main__background__contact1 main__background__contact1--modified">
-        <h3>Realiza tu pedido</h3>
+        <h3 data-aos="zoom-out-up">Realiza tu pedido</h3>
         <form action="" method="POST">
-            <fieldset id="pedido">
+            <fieldset data-aos="zoom-out-up" id="pedido">
                 <label for="">Nombre:</label>
                 <input type="text" name="name" placeholder="Ingresa tu nombre" required><br>
                 <label for="">Apellido:</label>
@@ -80,17 +82,20 @@
 
 <!--INICIO DE FOOTER-->
 <footer>
-    <h1 class="footer__title">Del Farol Tiendita</h1>
-    <nav>
+    <h1 data-aos="zoom-out-up" class="footer__title">Del Farol Tiendita</h1>
+    <nav data-aos="zoom-out-up">
         <a href="https://www.facebook.com/profile.php?id=100016201728347" target="_blank"><img src="../img/facebook.jpg" alt="Imagen logo facebook" width="30"></a>
         <a href="https://www.instagram.com/delfaroltiendita/" target="_blank"> <img src="../img/instagram.jpg" alt="imagen logo instagram" width="30"></a>
         <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.jpg" alt="imagen logo whatsapp" width="30"></a>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSckKnwCDcTQkPZMZpcztjnGbPJqDNWHlvfqbqBlBKrwzdtrGfTNZQkKzNxrtLgRdRqHhS" target="_blank"><img src="../img/gmail.jpg" alt="imagen logo gmail" width="30"></a>
     </nav>
-    <h4>Dirección:Los Olivos 389, Cipolletti, Río Negro, Argentina<br>Teléfono de contacto:2994763451<br>Dirección de mail:delfaroltiendita@gmail.com</h4>
-    <h5>©Copyright - Todos los derechos reservados</h5>
+    <h4 data-aos="zoom-out-up">Dirección:Los Olivos 389, Cipolletti, Río Negro, Argentina<br>Teléfono de contacto:2994763451<br>Dirección de mail:delfaroltiendita@gmail.com</h4>
+    <h5 data-aos="zoom-out-up">©Copyright - Todos los derechos reservados</h5>
 </footer>
 <!--FIN DE FOOTER--> 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
