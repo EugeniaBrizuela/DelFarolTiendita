@@ -8,53 +8,80 @@
     <title>Del Farol Tiendita</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <!--INICIO DE HEADER-->
-<header class="main__background__index">
-    <div data-aos="zoom-out-down" class="main__header">
-        <img class="header__logo" src="./img/LOGO.jpeg" alt="Imagen del logo del emprendimiento" >
-        <nav>
-            <ul>
-                <li><a class="header__item header__item--bold" href="./index.html">Inicio</a></li>
-                <li><a class="header__item" href="./pages/about.html">About</a></li>
-                <li><a class="header__item" href="./pages/galeria.html">Galería</a></li>
-                <li><a class="header__item" href="./pages/tutoriales.html">Tutoriales</a></li>
-                <li><a class="header__item" href="./pages/contacto.html">Contacto</a></li>
-            </ul> 
-        </nav>
-    </div>
-<!--INICIO SECCIÓN BIENVENIDA-->
-    <section>
-        <h1 data-aos="zoom-out-down">Del Farol Tiendita</h1>
-        <h2 data-aos="zoom-out-down">Crochet y porcelanas.</h2> 
-        <articlec class="main__welcome">
-            <h3>Emprendimiento familiar</h3>
-            <div class="main__text">
-                <p> Este es un proyecto familiar con el objetivo de regalar cosas hechas a mano a niños/bebes.</p>
-                <a class="button" href="./pages/about.html">Ver más</a>
+<main>
+    <header class="main__background__index">
+        <section>
+            <div data-aos="zoom-out-down" class="main__header">
+                <img class="header__logo" src="./img/LOGO.jpeg" alt="Imagen del logo del emprendimiento" >
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./pages/galeria.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galeria</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="./pages/galeria.html">Productos</a></li>
+                                  <li><a class="dropdown-item" href="./pages/galeria.html">Conejitas Bailarinas</a></li>
+                                  <li><a class="dropdown-item" href="./pages/galeria.html">Señor Conejo</a></li>
+                                  <li><a class="dropdown-item" href="./pages/galeria.html">Señor Osi</a></li>
+                                  <li><a class="dropdown-item" href="./pages/galeria.html">Porcelanas pintadas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/tutoriales.html">Tutoriales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </articlec>
-    </section>
+        </section>           
+<!--INICIO SECCIÓN BIENVENIDA-->
+        <section class="container">
+            <h1 data-aos="zoom-out-down">Del Farol Tiendita</h1>
+            <h2 data-aos="zoom-out-down">Crochet y porcelanas.</h2> 
+            <article class="main__welcome">
+                <h3 data-aos="zoom-in-left">Emprendimiento familiar</h3>
+                <div data-aos="zoom-in-left" class="main__text">
+                    <p> Este es un proyecto familiar con el objetivo de regalar cosas hechas a mano a niños/bebes.</p>
+                    <a type="button" class="btn btn-outline-warning" href="./pages/about.html">Ver más</a>
+                </div>
+            </article>
+        </section>
 <!--FIN SECCIÓN BIENVENIDA-->
 </header>
+</main>
+
 <!--FIN DE HEADR-->
 
 
 <!--INICIO SECCIÓN GALERÍA-->
 <main>
     <section class="main__background__primary">
-        <div class="grid__area">
-            <h3 data-aos="zoom-in-right" class="main__titulo">Galería</h3>
-            <img data-aos="zoom-in-right" id="img_bolso" class="main__image" src="./img/Bolsito.jpg" alt="Imagen de bolsito">
-            <img data-aos="zoom-in-up" id="img_conejitas" class="main__image" src="./img/Conejitas.jpg" alt="Imagen de conejitas">
-            <img data-aos="zoom-out-up" id="img_bolsa" class="main__image" src="./img/Bolsa ami.jpg" alt="Imagen bolsa amigurumis">
-            <img data-aos="zoom-in-left" id="img_osi" class="main__image" src="./img/Senor Osi 1.jpg" alt="Imagen Señor Osi">
-            <img data-aos="zoom-in-right" id="img_conejo" class="main__image" src="./img/Señor conejo.jpg" alt="Imagen de señor conejo">
-            <img data-aos="zoom-in-left" id="img_plato" class="main__image" src="./img/plato con conejita.jpg" alt="Imagen de platito pintado en porcelana">
+        <div class="container">
+            <div class="grid__area">
+                <h3 data-aos="zoom-in-right" class="main__titulo">Galería</h3>
+                <img data-aos="zoom-in-right" id="img_bolso" class="main__image" src="./img/Bolsito.jpg" alt="Imagen de bolsito">
+                <img data-aos="zoom-in-up" id="img_conejitas" class="main__image" src="./img/Conejitas.jpg" alt="Imagen de conejitas">
+                <img data-aos="zoom-out-up" id="img_bolsa" class="main__image" src="./img/Bolsa ami.jpg" alt="Imagen bolsa amigurumis">
+                <img data-aos="zoom-in-left" id="img_osi" class="main__image" src="./img/Senor Osi 1.jpg" alt="Imagen Señor Osi">
+                <img data-aos="zoom-in-right" id="img_conejo" class="main__image" src="./img/Señor conejo.jpg" alt="Imagen de señor conejo">
+                <img data-aos="zoom-in-left" id="img_plato" class="main__image" src="./img/plato con conejita.jpg" alt="Imagen de platito pintado en porcelana">
+            </div>
+            <a data-aos="zoom-in-right" type="button" class="btn btn-outline-warning" href="./pages/galeria.html">Ver más</a>  
         </div>
-        <a data-aos="zoom-in-right" class="button button--modified" href="./pages/galeria.html">Ver más</a>  
     </section>
 </main>
 <!--FIN SECCIÓN GALERÍA-->
@@ -62,20 +89,20 @@
 <!--INICIO SECCIÓN TUTORIAL-CONTACTO-->
 <main>
     <section class="main__background__primary main__background__primary--color2">
-        <article data-aos="zoom-in-right"  class="main__tutorials">
-            <h3>Tutoriales</h3>
-            <ol>  
-                <li class="tutorial__item">Manta bebés</li>
-                <li class="tutorial__item">Agarraderas</li>    
-            </ol>
-            <img id="tejiendo" class="main__image" src="./img/tejiendo.jpg" alt="Imagen tejiedo">
-            <a class="button" href="./pages/tutoriales.html">Ver más</a>
-        </article>   
-        <article data-aos="zoom-in-left"  class="main__tutorials main__tutorials--modified">
-            <h3>Contacto</h3>
-            <p>Contactate con nosotras para acordar algún pedido o para consultar sobre lo que quieras.</p>
-            <a class="button" href="./pages/contacto.html">Ver más</a>
-        </article>
+            <article data-aos="zoom-in-right" class="main__tutorials">
+                <h3>Tutoriales</h3>
+                <ol>  
+                    <li class="tutorial__item">Manta bebés</li>
+                    <li class="tutorial__item">Agarraderas</li>    
+                </ol>
+                <img id="tejiendo" class="main__image" src="./img/tejiendo.jpg" alt="Imagen tejiedo">
+                <a type="button" class="btn btn-outline-warning" href="./pages/tutoriales.html">Ver más</a>
+            </article>   
+            <article data-aos="zoom-in-left"  class="main__tutorials main__tutorials--modified">
+                <h3>Contacto</h3>
+                <p>Contactate con nosotras para acordar algún pedido o para consultar sobre lo que quieras.</p>
+                <a type="button" class="btn btn-outline-warning" href="./pages/contacto.html">Ver más</a>
+            </article>
     </section>
 </main>
 <!--FIN SECCIÓN TUTORIAL-CONTACTO-->
@@ -83,7 +110,7 @@
 <!--INICIO DE FOOTER-->
 <footer>
     <h1 data-aos="zoom-out-up"  class="footer__title">Del Farol Tiendita</h1>
-    <nav data-aos="zoom-out-up" >
+    <nav data-aos="zoom-out-up">
         <a href="https://www.facebook.com/profile.php?id=100016201728347" target="_blank"><img src="./img/facebook.jpg" alt="Imagen logo facebook" width="30"></a>
         <a href="https://www.instagram.com/delfaroltiendita/" target="_blank"> <img src="./img/instagram.jpg" alt="imagen logo instagram" width="30"></a>
         <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp.jpg" alt="imagen logo whatsapp" width="30"></a>
@@ -96,6 +123,7 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
