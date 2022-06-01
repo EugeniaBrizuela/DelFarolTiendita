@@ -264,6 +264,7 @@ p{
 .card{
     margin: var(--spacing-small);
     width: 400px;
+    background-color: var(--text-base-1);
 }
 
 .card-img-top{
