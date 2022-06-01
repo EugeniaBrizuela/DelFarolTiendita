@@ -262,7 +262,7 @@ p{
 
 .btn{
     color: var(--text-base-2);
-    font-size: var(--text-medium);
+    font-size: var(--text-small);
     border:#F49F0A solid;
     margin-top: var(--spacing-small);
 }
@@ -505,6 +505,20 @@ p{
         width: 90%;
 }
 
+.carousel{
+    background-color: var(--text-base-1);
+    background-size: cover;
+    padding: var(--spacing-small);
+    border-bottom-style: solid ;
+    border-bottom-color: var(--text-color-primary);
+    border-width: var(--spacing-xxsmall);
+}
+
+
+.carousel-item{
+    transition: transform 2s ease-in-out;
+}
+
 /* Estilos main Tutoriales-Contacto */
 
 .main__background__index--contact{
@@ -588,8 +602,12 @@ ol{
     justify-content: space-between; 
 }
 
-#pedido{
-    font-size: var(--text-medium);
+.form-floating{
+    font-size: var(--text-xsmall);
+}
+
+.form-control:hover{
+    border-color: var(--text-color-primary);
 }
 
 /* Estilos de Footer */
