@@ -193,15 +193,20 @@ p{
 }
 
 .main__about__image{
-    width: 60%;
+    width: 50%;
     margin: var(--spacing-small);
     border-style: solid;
     border-color: var(--text-color-primary);
-    border-width: var(--spacing-xxsmall);   
+    border-width: var(--spacing-xxsmall);
+    transition: 0.5s;   
+}
+
+.main__about__image:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 .main__about__image--width{
-    width: 100%;
+    width: 70%;
 }
 
 .main__about__image--width1{
@@ -312,7 +317,8 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: var(--spacing-border-logo) ;
+    margin-top: var(--spacing-border-logo);
+    margin-bottom: var(--spacing-small);
 }
 
 .main__text{
@@ -596,12 +602,21 @@ p{
 .main__back__carousel{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     background-color: var(--text-base-1);
     background-size: cover;
     padding: var(--spacing-small);
     border-bottom-style: solid ;
     border-bottom-color: var(--text-color-primary);
     border-width: var(--spacing-xxsmall);
+}
+
+.carousel{
+    transition: 0.5s;
+}
+
+.carousel:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 .carousel-dark .carousel-indicators [data-bs-target]{
@@ -611,8 +626,6 @@ p{
 .carousel-item{
     transition: transform 2s ease-in-out;
 }
-
-
 
 /* Estilos main Tutoriales-Contacto */
 
@@ -680,9 +693,10 @@ ol{
 
 .main__background__contact1{
     background-color: var(--text-base-2);
+    height: 620px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom-style: solid;
     border-bottom-color: var(--text-color-primary);
     border-width: var(--spacing-xxsmall);
@@ -691,10 +705,11 @@ ol{
 }
 
 .main__background__contact1--modified{
-    background-color: var(--text-base-1); 
+    background-color: var(--text-base-1);
+    height: 620px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
 }
 
 .form-floating{
