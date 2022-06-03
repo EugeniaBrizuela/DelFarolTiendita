@@ -8,7 +8,7 @@
 :root{
     /* Colors */
     --text-color-primary:#594E36;
-    --text-color-primary-trans:#a67201;
+    --text-color-primary-trans:#e7b444;
     --text-color-secundary: #FFFDED;
     --text-base-1:#FFFDED;
     --text-base-2:#F49F0A;
@@ -16,29 +16,29 @@
     --color-button-2:#fffded5c;
 
     /* Spacing */
-    --spacing-small: 30px;
-    --spacing-xsmall:15px;
-    --spacing-xxsmall: .5px;
-    --spacing-items-header: 20px;
-    --spacing-items-header-mobile: 10px;
-    --spacing-border-logo: 85px;
-    --spacing-border-button: 5px;
+    --spacing-small: 3rem;
+    --spacing-xsmall:1.5rem;
+    --spacing-xxsmall: 0.05rem;
+    --spacing-items-header: 1.2em;
+    --spacing-items-header-mobile: 1rem;
+    --spacing-border-logo: 8.5rem;
+    --spacing-border-button: 0.5rem;
 
 
     /* Fonts-family */
     --font-principal:'Darker Grotesque', sans-serif;
 
     /* Font-sizes */
-    --text-title: 90px;
-    --text-title-mobile: 60px;
-    --text-title-footer: 36px;
-    --text-subtitle: 50px;
-    --text-items-header: 20px;
-    --text-large: 35px;
-    --text-medium: 30px;
-    --text-small: 22px;
-    --text-xsmall: 16px;
-    --text-items-header-2: 19px;
+    --text-title: 9em;
+    --text-title-mobile: 6em;
+    --text-title-footer: 3.6em;
+    --text-subtitle: 5em;
+    --text-items-header: 2.3em;
+    --text-large: 3.5em;
+    --text-medium: 3em;
+    --text-small: 2.2em;
+    --text-xsmall: 1.6em;
+    --text-items-header-2: 1.9em;
 }
 
 /* Normalize */
@@ -62,33 +62,10 @@ body{
 /* Estilos de header */
 
 .header__logo{
-    width: 8%;
+    width: 15%;
     border-radius: var(--spacing-border-logo) ;
     margin: var(--spacing-xsmall);
 }
-
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: var(--spacing-small);
-    margin-left: var(--spacing-xsmall);
-    text-decoration: none;
-    list-style: none;
-
-}
-
-/* .header__item{
-    font-size:var(--text-items-header);
-    color: var(--text-color-primary);
-    margin: var(--text-items-header);
-    text-decoration: none;
-    transition-property: text-decoration color;
-}
-
-.header__item--bold{
-    font-weight: bold;
-} */
 
 .main__header{
     display: flex;
@@ -100,23 +77,38 @@ ul{
     border-width: var(--spacing-xxsmall);
 }
 
-.navbar{
-    color: var(--text-color-primary);
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: var(--spacing-small);
+    margin-left: var(--spacing-xsmall);
+    text-decoration: none;
+    list-style: none;
+}
+
+.main__item{
     font-size: var(--text-items-header);
-    margin: var(--spacing-border-button);
+    text-decoration: none;
+    margin: var(--spacing-items-header);
+    color: var(--text-color-primary);
+    border-bottom: var(--spacing-xxsmall) solid transparent;
+    transition: all .3s ease-in;
+}
+
+.main__item:hover{
+    color: var(--text-color-primary-trans);
+    border-bottom-color: var(--text-color-primary-trans);
+    border-bottom-style: solid;
+    border-bottom-width: var(--spacing-xxsmall);
+
+
+}
+
+.main__item--bold{
     font-weight: bold;
 }
 
-.nav-item{
-    color: var(--text-color-primary);
-    margin-left: var(--spacing-items-header);
-    margin-right: var(--spacing-items-header);
-}
-
-.dropdown-menu{
-    font-size: var(--text-items-header);
-    color: var(--text-color-primary);
-}
 
 /* Estilos index main bienvenida - Estilos main About */
 
@@ -232,7 +224,7 @@ p{
 }
 
 .main__description{
-    font-size: var(--text-medium);
+    font-size: none;
     color: var(--text-color-secundary);
     margin: var(--spacing-small);
     padding: var(--spacing-small);
@@ -265,7 +257,13 @@ p{
     margin: var(--spacing-small);
     width: 400px;
     background-color: var(--text-base-1);
+    transition: 0.6s;
 }
+
+.card:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
+}
+
 
 .card-img-top{
     margin: var(--spacing-small);
@@ -379,7 +377,7 @@ p{
     /* grid-area plato */
     grid-column:  2 / 5;
     grid-row: 3 / 5;
-    width: 110%;    
+    width: 110%;   
 }
 
 #img_conejitas{
@@ -439,18 +437,33 @@ p{
         /* grid-area nena */
         grid-column: 2 / 4;
         grid-row: 1 / 2;
+        transition: 0.5s;
+}
+
+#nena_campestre:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #conejitas_rosas{
         /* grid-area conejas-rosas */
         grid-column: 4 / 10;
         grid-row: 1 / 4;
+        transition: 0.5s;
+}
+
+#conejitas_rosas:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #muñecas{
         /* grid-area muñecas-invierno */
         grid-column: 10 / 13;
         grid-row: 1 / 2;
+        transition: 0.5s;
+}
+
+#muñecas:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #corazones{
@@ -458,30 +471,55 @@ p{
         grid-column: 13 / 15;
         grid-row: 1 / 3;
         justify-self: end;
+        transition: 0.5s;
+}
+
+#corazones:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #portaloquequieras{
         /* grid-area portaloquequieras */
         grid-column: 1 / 4;
         grid-row: 3 / 6;
+        transition: 0.5s;
+}
+
+#portaloquequieras:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #letras{
         /* grid-area letras */
         grid-column: 10 / 13;
         grid-row: 3 / 6;
+        transition: 0.5s;
+}
+
+#letras:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #señores_conejos{
         /* grid-area señores-conejos */
         grid-column: 1 / 4;
         grid-row: 7 / 10;
+        transition: 0.5s;
+}
+
+#señores_conejos:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #señor_osi{
         /* grid-area señor-osi */
         grid-column: 4 / 8;
         grid-row: 5 / 9;
+        transition: 0.5s;
+}
+
+#señor_osi:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #plato_oliver{
@@ -489,18 +527,33 @@ p{
         grid-column: 8 / 10;
         grid-row: 7 / 9;
         width: 79%;
+        transition: 0.5s;
+}
+
+#plato_oliver:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #portaloquequieras_rosa{
         /* grid-area portaloquequieras-rosa */
         grid-column: 10 / 14;
         grid-row: 7 / 10;
+        transition: 0.5s;
+}
+
+#portaloquequieras_rosa:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #sonajeros{
         /* grid-area sonajeros */
         grid-column: 14 / 15;
         grid-row: 5 / 8;
+        transition: 0.5s;
+}
+
+#sonajeros:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #manta_triangulos{
@@ -508,6 +561,11 @@ p{
         grid-column: 4 / 6;
         grid-row: 9 / 10;
         align-self: end;
+        transition: 0.5s;
+}
+
+#manta_triangulos:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #azucarera{
@@ -515,6 +573,11 @@ p{
         grid-column: 6 / 10;
         grid-row: 9 / 10;
         align-self: end;
+        transition: 0.5s;
+}
+
+#azucarera:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
 #muchos_conejos{
@@ -523,9 +586,16 @@ p{
         grid-row: 9 / 10;
         justify-self: end;
         width: 90%;
+        transition: 0.6s;
 }
 
-.carousel{
+#muchos_conejos:hover{
+    box-shadow: 0px 0px 10px var(--text-color-primary);
+}
+
+.main__back__carousel{
+    display: flex;
+    flex-direction: row;
     background-color: var(--text-base-1);
     background-size: cover;
     padding: var(--spacing-small);
@@ -534,10 +604,15 @@ p{
     border-width: var(--spacing-xxsmall);
 }
 
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: var(--text-color-primary) ;
+}
 
 .carousel-item{
     transition: transform 2s ease-in-out;
 }
+
+
 
 /* Estilos main Tutoriales-Contacto */
 
@@ -664,18 +739,15 @@ footer nav a{
     ul{
         justify-content: flex-start;
     }
-    
-    .navbar-nav{
+
+    .main__item{
         font-size: var(--text-small);
-        flex-direction: row;  
+        margin: var(--spacing-items-header-mobile);
     }
 
-    .nav-item{
-        margin-left: var(--spacing-xsmall);
-        margin-right: var(--spacing-xsmall);
+    .header__logo{
+        width: 20%;
     }
-
-
 
 
     /* Index bienvenida - about */
@@ -904,6 +976,10 @@ footer nav a{
 
      }
 
+     .carousel-item{
+         width: 40%;
+    }
+
     .main__description{
         text-align: center;
         border-right-color: none;
@@ -948,6 +1024,7 @@ footer nav a{
     .header__logo{
         width: 20%;
         margin: var(--spacing-xxsmall);
+        text-align: center;
     }
 
     .main__header{
@@ -959,28 +1036,10 @@ footer nav a{
         justify-content: center;
     }
 
-    .dropdown-menu{
-        font-size: var(--spacing-xsmall);
-
-    }
-
-    .navbar-nav{
-        font-size: var(--text-xsmall);
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: start;  
-    }
-
-    .nav-item{
-        margin-left: var(--spacing-border-button);
-        margin-right: var(--spacing-border-button);
-    }
-
-    /* .header__item{
-        font-size: var(--spacing-xsmall);
-        margin: var(--spacing-items-header-mobile);
+    .main__item{
         font-size: var(--text-items-header-2);
-    } */
+        margin: var(--spacing-border-button);
+    }
 
     h1 #title{
         font-size: var(--text-medium);
@@ -1360,23 +1419,6 @@ footer nav a{
         justify-content: center;
     }
 
-    .dropdown-menu{
-        font-size: var(--spacing-xsmall);
-
-    }
-
-    .navbar-nav{
-        font-size: var(--text-xsmall);
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: end;
-  
-    }
-    .nav-item{
-        margin-left: var(--spacing-border-button);
-        margin-right: var(--spacing-border-button);
-    }
-
     h1{
         font-size: var(--text-subtitle);
     }
@@ -1750,11 +1792,6 @@ footer nav a{
 
  /* Animaciones-transiciones-gradientes */
 
-.header__item:hover{
-    text-decoration:underline;
-    color: var(--text-color-primary-trans);
-}
-
 .tutorial__item:hover{
     text-decoration: underline;
 }
@@ -1763,13 +1800,6 @@ footer nav a{
     color:var(--text-color-primary);
 }
 
-.dropdown-item:hover{
-    background-color:#f4c766 ;
-}
-
-.navbar:hover{
-    color: var(--text-color-primary-trans);
-}
 
 
 
