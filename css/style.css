@@ -38,6 +38,8 @@
     --text-medium: 3em;
     --text-small: 2.2em;
     --text-xsmall: 1.6em;
+    --text-xxsmall: 1.3em;
+    --text-xxxsmall: 1em;
     --text-items-header-2: 1.9em;
 }
 
@@ -61,12 +63,6 @@ body{
 
 /* Estilos de header */
 
-.header__logo{
-    width: 15%;
-    border-radius: var(--spacing-border-logo) ;
-    margin: var(--spacing-xsmall);
-}
-
 .main__header{
     display: flex;
     flex-direction: row;
@@ -75,6 +71,12 @@ body{
     border-bottom-style: solid;
     border-bottom-color: var(--text-color-primary);
     border-width: var(--spacing-xxsmall);
+}
+
+.header__logo{
+    width: 15%;
+    border-radius: var(--spacing-border-logo) ;
+    margin: var(--spacing-xsmall);
 }
 
 ul{
@@ -101,16 +103,13 @@ ul{
     border-bottom-color: var(--text-color-primary-trans);
     border-bottom-style: solid;
     border-bottom-width: var(--spacing-xxsmall);
-
-
 }
 
 .main__item--bold{
     font-weight: bold;
 }
 
-
-/* Estilos index main bienvenida - Estilos main About */
+/* Estilos de index bienvenida - Estilos de about */
 
 .main__background__index{
     background-image: url(../img/conejos.jpg);
@@ -168,6 +167,42 @@ p{
     margin-top: var(--spacing-small);
 }
 
+.main__welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-border-logo);
+    margin-bottom: var(--spacing-small);
+}
+
+.main__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: var(--spacing-items-header);
+    padding-left: var(--spacing-border-logo);
+    border-left-style: solid;
+    border-left-color: var(--text-color-primary);
+    border-width: var(--spacing-xxsmall);
+}
+
+.btn{
+    color: var(--text-base-2);
+    font-size: var(--text-small);
+    border:#F49F0A solid;
+    margin-top: var(--spacing-small);
+}
+
+.btn:hover{
+    color:var(--text-color-primary);
+}
+
+.btn-outline-warning{
+    color: var(--text-color-primary);
+}
+
 .main__about{
     background-color: var(--text-base-2);
     background-size: cover;
@@ -213,40 +248,6 @@ p{
     width: 180%;
 }
 
-.main__about__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: var(--spacing-small);
-}
-
-.main__about__item--border{
-    border-right-style: solid;
-    border-right-color: var(--text-color-primary);
-    border-right-width: var(--spacing-xxsmall);
-    padding-right: var(--spacing-small);
-}
-
-.main__description{
-    font-size: none;
-    color: var(--text-color-secundary);
-    margin: var(--spacing-small);
-    padding: var(--spacing-small);
-    text-align: right;
-    border-right-color: var(--text-color-secundary);
-    border-right-style: solid;
-    border-right-width: var(--spacing-xxsmall);
-}
-
-.main__description--modified{
-    color: var(--text-color-primary);
-    text-align: left;
-    border-left-color: var(--text-color-primary);
-    border-left-style: solid;
-    border-left-width: var(--spacing-xxsmall);
-}
-
 .main__parrafo{
     font-size: var(--text-medium);
     color: var(--text-color-secundary);
@@ -269,7 +270,6 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-
 .card-img-top{
     margin: var(--spacing-small);
     text-align: center;
@@ -283,57 +283,7 @@ p{
     text-align: center;
 }
 
-.btn{
-    color: var(--text-base-2);
-    font-size: var(--text-small);
-    border:#F49F0A solid;
-    margin-top: var(--spacing-small);
-}
-
-.btn-outline-warning{
-    color: var(--text-color-primary);
-}
-
-.button{
-    font-size: var(--text-medium);
-    text-decoration: none;
-    border-radius: var(--spacing-border-button);
-    color: var(--text-color-primary);
-    background-color: var(--color-button-1);
-    text-align:center;
-    margin-top: var(--spacing-items-header);
-    transition: all .5s linear;
-}
-
-.button--modified{
-    color: var(--text-color-secundary);
-    background-color: var(--color-button-2);
-    margin: var(--spacing-border-logo);
-    transition: all .2s linear;
-}
-
-.main__welcome{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: var(--spacing-border-logo);
-    margin-bottom: var(--spacing-small);
-}
-
-.main__text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: var(--spacing-items-header);
-    padding-left: var(--spacing-border-logo);
-    border-left-style: solid;
-    border-left-color: var(--text-color-primary);
-    border-width: var(--spacing-xxsmall);
-}
-
-/* Estilos main Galería */
+/* Estilos de galería */
 
 .main__background__index--galery{
     background-image: url(../img/galeria.jpg);
@@ -348,18 +298,6 @@ p{
     border-width: var(--spacing-xxsmall);
 }
 
-.color__2{
-    font-size: var(--text-large);
-    color: var(--text-color-secundary);
-    font-weight: bold;
-}
-
-.colorp__2{
-    font-size: var(--text-medium);
-    color: var(--text-color-secundary);
-    margin-top: var(--spacing-small);
-}
-
 .grid__area{    
     display: grid;
     grid-template-columns: repeat(15, 1fr);
@@ -368,7 +306,6 @@ p{
     margin-right: var(--spacing-small);
     justify-items: center;
     justify-content: center;
-    
 }
 
 .main__titulo{
@@ -587,8 +524,8 @@ p{
 }
 
 #muchos_conejos{
-        /* grid-area muchos-conejos */
-        grid-column: 14 / 15;
+    /* grid-area muchos-conejos */
+    grid-column: 14 / 15;
         grid-row: 9 / 10;
         justify-self: end;
         width: 90%;
@@ -597,6 +534,12 @@ p{
 
 #muchos_conejos:hover{
     box-shadow: 0px 0px 10px var(--text-color-primary);
+}
+
+.main__image{
+    border-style: solid;
+    border-color: var(--text-color-primary);
+    border-width: var(--spacing-xxsmall);
 }
 
 .main__back__carousel{
@@ -627,17 +570,38 @@ p{
     transition: transform 2s ease-in-out;
 }
 
-/* Estilos main Tutoriales-Contacto */
-
-.main__background__index--contact{
-    background-image: url(../img/contact.jpg);
-    height: 750px;
+.main__description{
+    font-size: none;
+    color: var(--text-color-secundary);
+    margin: var(--spacing-small);
+    padding: var(--spacing-small);
+    text-align: right;
+    border-right-color: var(--text-color-secundary);
+    border-right-style: solid;
+    border-right-width: var(--spacing-xxsmall);
 }
 
-.main__background__index--tutorials{
-    background-image: url(../img/tutorial.jpg);
-    height: 750px;
+.main__description--modified{
+    color: var(--text-color-primary);
+    text-align: left;
+    border-left-color: var(--text-color-primary);
+    border-left-style: solid;
+    border-left-width: var(--spacing-xxsmall);
 }
+
+.color__2{
+    font-size: var(--text-large);
+    color: var(--text-color-secundary);
+    font-weight: bold;
+}
+
+.colorp__2{
+    font-size: var(--text-medium);
+    color: var(--text-color-secundary);
+    margin-top: var(--spacing-small);
+}
+
+/* Estilos de tutoriales */
 
 .main__background__primary--color2{
     background-color: var(--text-base-1);
@@ -646,6 +610,11 @@ p{
     justify-content: space-around;
     align-items: start;
     align-content: center;
+}
+
+.main__background__index--tutorials{
+    background-image: url(../img/tutorial.jpg);
+    height: 750px;
 }
 
 .main__tutorials{
@@ -668,27 +637,28 @@ p{
     padding: var(--spacing-xxsmall);
 }
 
-.main__background--tutorials{
-    background-image: url(../img/tutorial.jpg);
-}
-
 ol{
     font-size: var(--text-medium);
     text-align: center;
     margin: var(--spacing-small);
-}
-
-.main__image{
-    border-style: solid;
-    border-color: var(--text-color-primary);
-    border-width: var(--spacing-xxsmall);
-}
+} 
 
 .tutorial__item{
     text-decoration: none;
     font-weight: bold;
     color: var(--text-color-primary);
     transition: all 1s text-decoration;
+}
+
+.tutorial__item:hover{
+    text-decoration: underline;
+}
+
+/* Estilos de contacto */
+
+.main__background__index--contact{
+    background-image: url(../img/contact.jpg);
+    height: 750px;
 }
 
 .main__background__contact1{
@@ -718,10 +688,10 @@ ol{
 
 .form-control{
     border-color: var(--text-color-primary);
-    font-size: var(--text-small);
+    font-size: var(--text-xsmall);
 }
 
-/* Estilos de Footer */
+/* Estilos de footer */
 
 footer{
     background-color: var(--text-base-2);
@@ -746,11 +716,16 @@ footer nav a{
 
 /* Media Querie */
 
-
 /* Tablet */
 
 @media screen and (min-width: 481px) and (max-width: 978px){
+    
     /* Header */
+
+    .header__logo{
+        width: 20%;
+    }
+
     ul{
         justify-content: flex-start;
     }
@@ -760,17 +735,12 @@ footer nav a{
         margin: var(--spacing-items-header-mobile);
     }
 
-    .header__logo{
-        width: 20%;
-    }
-
-
-    /* Index bienvenida - about */
-
+    /* Estilos index main bienvenida - Estilos main About */
 
     .main__welcome{
         flex-direction: column;    
     }
+
     .main__text{
         padding-left: none;
         border-left-style: none;
@@ -784,22 +754,6 @@ footer nav a{
         flex-direction: column;  
     }
     
-    .main__about__image--width1{
-        width: 80%;
-    }
-
-    .main__parrafo{
-        padding-top: var(--spacing-small);
-        text-align: center;
-        border-top-color: var(--text-color-secundary);
-        border-top-style: solid;
-        border-top-width: var(--spacing-xxsmall);
-        padding-left: none;
-        border-left-color: none;
-        border-left-style: none;
-        border-left-width: none;
-    }
-
     .main__about2{
         flex-direction: column;
         align-items: center;
@@ -813,15 +767,20 @@ footer nav a{
         width: 50%;
     }
 
-    .main__about__item--border{
-        border-right-style: none;
-        border-right-color: none;
-        border-right-width: none;
-        padding-right: none;
-        border-bottom: solid;
-        border-bottom-color: var(--text-color-primary);
-        border-right-width: var(--spacing-xxsmall);
-        padding-bottom: var(--spacing-small);
+    .main__about__image--width1{
+        width: 80%;
+    }
+
+    .main__parrafo{
+        padding-top: var(--spacing-small);
+        text-align: center;
+        border-top-color: var(--text-color-secundary);
+        border-top-style: solid;
+        border-top-width: var(--spacing-xxsmall);
+        padding-left: none;
+        border-left-color: none;
+        border-left-style: none;
+        border-left-width: none;
     }
 
     .card-img-top{
@@ -829,16 +788,8 @@ footer nav a{
         text-align: center;
     }
 
-
-
-    #tejiendo{
-        width: 100%;
-    }
-
-    /* Estilos galería */
-
-
-
+    /* Estilos de galería */
+    
     .grid__area__galery{
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: .7fr .7fr 1fr .8fr .2fr .7fr .6fr;
@@ -847,152 +798,147 @@ footer nav a{
         padding-top: 8px;
         row-gap: 10px;
         column-gap: 10px;
-     }
-         
-     #nena_campestre{
-         /* grid-area nena */
-         grid-column: 1 / 3;
-         grid-row: 1 / 3;
-         width: 100%;
-         justify-self: stretch;
-         margin-top: var(--spacing-small);
-
-     }
+    }
+    
+    #nena_campestre{
+        /* grid-area nena */
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        width: 100%;
+        justify-self: stretch;
+        margin-top: var(--spacing-small);
+    }
  
-     #conejitas_rosas{
-         /* grid-area conejas-rosas */
-         grid-column: 3 / 7;
-         grid-row: 1 / 3;
-         width: 100%;
-
-     }
+    #conejitas_rosas{
+        /* grid-area conejas-rosas */
+        grid-column: 3 / 7;
+        grid-row: 1 / 3;
+        width: 100%;
+    }
  
-     #muñecas{
-         /* grid-area muñecas-invierno */
-         grid-column: 7 / 10;
-         grid-row: 1 / 2;
-         width: 95%;
-         margin-left: var(--spacing-xsmall);
-
-     }
+    #muñecas{
+        /* grid-area muñecas-invierno */
+        grid-column: 7 / 10;
+        grid-row: 1 / 2;
+        width: 95%;
+        margin-left: var(--spacing-xsmall);
+    }
      
-     #manta_triangulos{
-         /* grid-area manta-triangulos */
-         grid-column: 4 / 6;
-         grid-row: 6 / 7;
+    #manta_triangulos{
+        /* grid-area manta-triangulos */
+        grid-column: 4 / 6;
+        grid-row: 6 / 7;
+        width: 80%;
+        align-self: stretch;
+        justify-self: stretch;
+    }
+
+    #sonajeros{
+        /* grid-area sonajeros */
+        grid-column: 8 / 11;
+        grid-row: 3 / 6;
+        width: 80%;
+        justify-self: end;
+        align-self: center;
+        margin-top: var(--spacing-border-logo);
+        margin-right: var(--spacing-small);
+    }
+    
+    #plato_oliver{
+        /* grid-area plato-oliver */
+        grid-column: 6 / 8;
+        grid-row: 4 / 6;
+        width: 100%;
+        justify-self: center;
+        margin-left:  var(--spacing-small);
+    }
+
+    #corazones{
+        /* grid-area corazones */
+        grid-column: 7 / 11;
+        grid-row: 2 / 6;
+        width: 90%;
+        align-self: start;
+        justify-self: end;
+        
+    }
+
+    #portaloquequieras{
+        /* grid-area portaloquequieras */
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+        width: 100%;
+        align-self: center;
+        
+    }
+    
+    #letras{
+        /* grid-area letras */
+        grid-column: 3 / 7;
+        grid-row: 2 / 4;
+        width: 99%;
+        align-self: center ;
+        margin-left: var(--spacing-xsmall);
+
+
+    }
+    
+    #señores_conejos{
+        /* grid-area señores-conejos */
+        grid-column: 1 / 4;
+        grid-row: 3 / 8;
+        width: 100%;
+        align-self:end;
+        margin-bottom: var(--spacing-border-logo);
+
+    }
+
+    #señor_osi{
+        /* grid-area señor-osi */
+        grid-column: 4 / 6;
+        grid-row: 4 / 5;
+        width: 100%;
+        align-self: center;
+    }
+
+    #portaloquequieras_rosa{
+        /* grid-area portaloquequieras-rosa */
+        grid-column: 6 / 8;
+        grid-row: 6 / 8;
+        width: 150%;
+        justify-self: start;
+        align-self: end;
+    }
+
+    #azucarera{
+        /* grid-area azucarera */
+        grid-column: 8 / 11;
+        grid-row: 7 / 7;
+        width: 60%;
+        align-self: end;
+        justify-self: end;
+        margin-bottom: var(--spacing-small);
+    }
+    
+    #muchos_conejos{
+        /* grid-area muchos-conejos */
+        grid-column: 8 / 11;
+        grid-row: 6 / 7;
+        width: 40%;
+        align-self: start;
+        justify-self: end;
+        margin-top: var(--spacing-border-logo);
+    }
+
+    .main__back__carousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .carousel-item{
          width: 80%;
-         align-self: stretch;
-         justify-self: stretch;
-
-     }
-     #sonajeros{
-         /* grid-area sonajeros */
-         grid-column: 8 / 11;
-         grid-row: 3 / 6;
-         width: 80%;
-         justify-self: end;
-         align-self: center;
-         margin-top: var(--spacing-border-logo);
-         margin-right: var(--spacing-small);
-
-     }
-     
-     #plato_oliver{
-         /* grid-area plato-oliver */
-         grid-column: 6 / 8;
-         grid-row: 4 / 6;
-         width: 100%;
-         justify-self: center;
-         margin-left:  var(--spacing-small);
-
-
-
-     }
-     #corazones{
-         /* grid-area corazones */
-         grid-column: 7 / 11;
-         grid-row: 2 / 6;
-         width: 90%;
-         align-self: start;
-         justify-self: end;
- 
-     }
- 
-     #portaloquequieras{
-         /* grid-area portaloquequieras */
-         grid-column: 1 / 3;
-         grid-row: 2 / 4;
-         width: 100%;
-         align-self: center;
-
-     }
- 
-     #letras{
-         /* grid-area letras */
-         grid-column: 3 / 7;
-         grid-row: 2 / 4;
-         width: 99%;
-         align-self: center ;
-         margin-left: var(--spacing-xsmall);
-
- 
-     }
- 
-     #señores_conejos{
-         /* grid-area señores-conejos */
-         grid-column: 1 / 4;
-         grid-row: 3 / 8;
-         width: 100%;
-         align-self:end;
-         margin-bottom: var(--spacing-border-logo);
-
-     }
- 
-     #señor_osi{
-         /* grid-area señor-osi */
-         grid-column: 4 / 6;
-         grid-row: 4 / 5;
-         width: 100%;
-         align-self: center;
-
-     }
- 
- 
-     #portaloquequieras_rosa{
-         /* grid-area portaloquequieras-rosa */
-         grid-column: 6 / 8;
-         grid-row: 6 / 8;
-         width: 150%;
-         justify-self: start;
-         align-self: end;
-
-     }
- 
- 
-     #azucarera{
-         /* grid-area azucarera */
-         grid-column: 8 / 11;
-         grid-row: 7 / 7;
-         width: 60%;
-         align-self: end;
-         justify-self: end;
-         margin-bottom: var(--spacing-small);
-
-     }
- 
-     #muchos_conejos{
-         /* grid-area muchos-conejos */
-         grid-column: 8 / 11;
-         grid-row: 6 / 7;
-         width: 40%;
-         align-self: start;
-         justify-self: end;
-         margin-top: var(--spacing-border-logo);
-
-     }
-
-     .carousel-item{
-         width: 40%;
     }
 
     .main__description{
@@ -1004,7 +950,7 @@ footer nav a{
         border-bottom-style: solid;
         border-bottom-width: var(--spacing-xxsmall);
     }
-
+    
     .main__description--modified{
         text-align: center;
         border-left-color: none;
@@ -1013,87 +959,84 @@ footer nav a{
         border-top-color: var(--text-color-primary);
         border-top-style: solid;
         border-top-width: var(--spacing-xxsmall);
-
     }
 
-    /* Estilos de Tutoriales */
-
+    /* Estilos de tutoriales */
 
     .main__background__index--tutorials{
         height: 900px;
     }
+    
+    #tejiendo{
+        width: 100%;
+    }
 
-    /* Estilos de Contacto */
-
+    /* Estilos de contacto */
+    
     .main__background__contact1{
         align-items: center;
     }
-
-
 }
 
 /* Mobile */ 
 
 @media screen and (min-width: 321px) and (max-width: 480px){
+    
     /* Header */
+    
+    .main__header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main__header a{
+        text-align: center;
+    }
+
     .header__logo{
         width: 20%;
         margin: var(--spacing-xxsmall);
         text-align: center;
     }
-
-    .main__header{
-        flex-direction: column;
-        justify-content: center;
+    
+    .main__item{
+        text-align: center;
+        font-size: var(--text-xsmall);
+        margin: var(--spacing-items-header-button);
+        padding: var(--spacing-items-header-mobile);
     }
     
-    ul{
-        justify-content: center;
-    }
-
-    .main__item{
-        font-size: var(--text-items-header-2);
-        margin: var(--spacing-border-button);
+    /* Estilos de index bienvenida - Estilos de about */
+    
+    .main__background__index--about{
+        height: 1000px;
     }
 
     h1 #title{
         font-size: var(--text-medium);
     }
-
-    .footer__title{
-        font-size: var(--text-title-footer);
-    }
-
+    
     h3{
         font-size: var(--text-medium);
     }
-
+    
     h4{
         font-size: var(--text-xsmall);
     }
-
+    
     p{
         font-size: var(--text-small);
     }
-
-    .main__parrafo{
-        font-size: var(--text-small);
-    }
-
-    .btn{
-        font-size: var(--text-small);
-    }
-
+    
     ol{
         font-size: var(--text-small);
     }
-
-    /* Index bienvenida - about */
-
+    
     .main__welcome{
         flex-direction: column;    
     }
-
+    
     .main__text{
         padding-left: none;
         border-left-style: none;
@@ -1102,15 +1045,28 @@ footer nav a{
         border-top-style: solid;
         border-top-color: var(--text-color-primary);
     }
-    .main__about{
-        flex-direction: column;
-        
-    }
 
+    .btn{
+        font-size: var(--text-small);
+    }
+    
+    .main__about{
+        flex-direction: column;   
+    }
+    
+    .main__about2{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main__about__image--width{
+        width: 60%;
+    }
+    
     .main__about__image--width1{
         width: 80%;
     }
-
+    
     .main__parrafo{
         font-size: var(--text-small);
         padding-top: var(--spacing-small);
@@ -1123,35 +1079,19 @@ footer nav a{
         border-left-style: none;
         border-left-width: none;
     }
-
-    .main__about2{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main__about__item--border{
-        border-right-style: none;
-        border-right-color: none;
-        border-right-width: none;
-        padding-right: none;
-        border-bottom: solid;
-        border-bottom-color: var(--text-color-primary);
-        border-right-width: var(--spacing-xxsmall);
-        padding-bottom: var(--spacing-small);
-    }
-
+    
     .card{
         width: 260px;
         margin: var(--spacing-xxsmall);
     }
-
+    
     .card-img-top{
         width: 180px;
         text-align: center;
     }
     
-    /* Estilos galería */
-
+    /* Estilos de galería */
+    
     .grid__area{
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(.4fr .6fr .4fr .3fr .8fr .2fr .8fr .5fr);
@@ -1164,7 +1104,7 @@ footer nav a{
         justify-self: end;
         align-self: start;
     }
-
+    
     #img_bolso{
         /* grid-area bolso */
         grid-column:  1 / 3;
@@ -1180,9 +1120,7 @@ footer nav a{
         grid-row: 1 / 4;
         width: 70% ;
         margin-top: var(--spacing-small);
-        justify-self: end; 
-
-    
+        justify-self: end;       
     }
 
     #img_osi{
@@ -1191,7 +1129,7 @@ footer nav a{
         grid-row: 5 / 6;
         width: 112%;
     }
-
+    
     #img_conejo{
         /* grid-area conejo */
         grid-column: 1 / 6;
@@ -1242,7 +1180,7 @@ footer nav a{
         justify-self: start;
         align-self: end;
     }
-
+    
     #muñecas{
         /* grid-area muñecas-invierno */
         grid-column: 1 / 6;
@@ -1281,7 +1219,6 @@ footer nav a{
         width: 100%;
         align-self: start;
         justify-self: start;
-    
     }
 
     #portaloquequieras{
@@ -1289,7 +1226,6 @@ footer nav a{
         grid-column: 1 / 4;
         grid-row: 3 / 4;
         width: 100%;
-
     }
 
     #letras{
@@ -1340,8 +1276,18 @@ footer nav a{
         width: 100%;
     }
 
+    .main__back__carousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .carousel-item{
+        width: 100%;
+    }
+
     .main__description{
-        font-size: var(--text-small);
         text-align: center;
         border-right-color: none;
         border-right-style: none;
@@ -1352,7 +1298,6 @@ footer nav a{
     }
 
     .main__description--modified{
-        font-size: var(--text-small);
         text-align: center;
         border-left-color: none;
         border-left-style: none;
@@ -1360,7 +1305,6 @@ footer nav a{
         border-top-color: var(--text-color-primary);
         border-top-style: solid;
         border-top-width: var(--spacing-xxsmall);
-
     }
 
     .color__2{
@@ -1370,29 +1314,17 @@ footer nav a{
     .colorp__2{
         font-size: var(--text-small);
     }
-
-    .main__about__image--width{
-        width: 60%;
-    }
-
-    /* Estilos tutoriales-Contacto */
-
-    #tejiendo{
-        width: 105%;
-    }
-
-    .main__background__index--tutorials{
-        height: 1000px;
-    }
-
-    .main__background__contact1{
-        align-items: center;
-    }
-
+    
+    /* Estilos de tutoriales*/
+    
     .main__background__primary--color2{
         flex-direction: column;
     }
-
+    
+    .main__background__index--tutorials{
+        height: 1000px;
+    }
+    
     .main__tutorials{
         border-right-style: none;
         border-right-color: none;
@@ -1401,39 +1333,78 @@ footer nav a{
         border-bottom-color: var(--text-color-primary);
         border-bottom-width: var(--spacing-xxsmall);
     }
-
+    
     .main__tutorials--modified{
         text-align: center;
         border-bottom-style: none;
         border-bottom-color: none;
-        border-bottom-width: vnone;
+        border-bottom-width: none;
     }
 
+    #tejiendo{
+        width: 105%;
+    }
+    
+    #width-mobile-manta{
+        width: 85%;
+    }
+    
+    #width-mobile-agarradera{
+        width: 85%;
+    }
 
-    /* Estilo de About */
-    .main__background__index--about{
-        height: 1000px;
+    /* Estilos de contacto*/
+    
+    .main__background__contact1{
+        align-items: center;
+    }
+    
+    .form-control{
+        font-size: var(--text-xxsmall);
+    } 
+    
+    /*Estilo de footer */
+    
+    .footer__title{
+        font-size: var(--text-title-footer);
     }
 }
 
 /* Mobile pequeño */
 
 @media screen and (max-width: 320px){
+    
     /* Header */
-    .header__logo{
-        width: 22%;
-        margin: var(--spacing-xxsmall);
-    }
 
     .main__header{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+    
+    .main__header a{
+        text-align: center;
     }
     
     ul{
         justify-content: center;
     }
 
+    .header__logo{
+        width: 22%;
+        margin: var(--spacing-xxsmall);
+        text-align: center;
+    }
+
+    .main__item{
+        text-align: center;
+        font-size: var(--text-xxsmall);
+        margin: var(--spacing-items-header-button);
+        padding: var(--spacing-border-button);
+    }
+
+    /* Estilos de index  bienvenida - Estilos de about */
+    
     h1{
         font-size: var(--text-subtitle);
     }
@@ -1442,12 +1413,8 @@ footer nav a{
         font-size: var(--text-medium);
     }
 
-    .footer__title{
-        font-size: var(--text-title-footer);
-    }
-
     h3{
-        font-size: var(--text-medium);
+        font-size: var(--text-small);
     }
 
     h4{
@@ -1458,16 +1425,9 @@ footer nav a{
         font-size: var(--text-small);
     }
 
-
-    .btn{
-        font-size: var(--text-xsmall);
-    }
-
     ol{
         font-size: var(--text-small);
     }
-
-    /* Index bienvenida - about */
 
     .main__welcome{
         flex-direction: column;    
@@ -1482,9 +1442,21 @@ footer nav a{
         border-top-color: var(--text-color-primary);
     }
 
+    .btn{
+        font-size: var(--text-xsmall);
+    }
+    
     .main__about{
         flex-direction: column;
-        
+    }
+    
+    .main__about2{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main__about__image--width{
+        width: 60%;
     }
 
     .main__about__image--width1{
@@ -1502,11 +1474,6 @@ footer nav a{
         border-left-color: none;
         border-left-style: none;
         border-left-width: none;
-    }
-
-    .main__about2{
-        flex-direction: column;
-        align-items: center;
     }
 
     .card{
@@ -1528,7 +1495,7 @@ footer nav a{
         font-size: var(--text-small);
     }
 
-    /* Estilos galería */
+    /* Estilos de galería */
 
     .grid__area{
         grid-template-columns: repeat(7, 1fr);
@@ -1558,9 +1525,7 @@ footer nav a{
         grid-row: 1 / 4;
         width: 60% ;
         margin-top: var(--spacing-small);
-        justify-self: end; 
-
-    
+        justify-self: end;
     }
 
     #img_osi{
@@ -1659,7 +1624,6 @@ footer nav a{
         width: 100%;
         align-self: start;
         justify-self: start;
-    
     }
 
     #portaloquequieras{
@@ -1667,7 +1631,6 @@ footer nav a{
         grid-column: 1 / 4;
         grid-row: 3 / 4;
         width: 100%;
-
     }
 
     #letras{
@@ -1718,8 +1681,18 @@ footer nav a{
         width: 100%;
     }
 
+    .main__back__carousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .carousel-item{
+        width: 110%;
+    }
+
     .main__description{
-        font-size: var(--text-small);
         text-align: center;
         border-right-color: none;
         border-right-style: none;
@@ -1730,7 +1703,6 @@ footer nav a{
     }
 
     .main__description--modified{
-        font-size: var(--text-small);
         text-align: center;
         border-left-color: none;
         border-left-style: none;
@@ -1738,7 +1710,6 @@ footer nav a{
         border-top-color: var(--text-color-primary);
         border-top-style: solid;
         border-top-width: var(--spacing-xxsmall);
-
     }
 
     .color__2{
@@ -1759,28 +1730,16 @@ footer nav a{
         font-weight: normal;
     }
 
-    .main__about__image--width{
-        width: 60%;
-    }
-
-    /* Estilos tutoriales-Contacto */
-
-    #tejiendo{
-        width: 60%;
-    }
-
-    .main__background__index--tutorials{
-        height: 1000px;
-    }
-
-    .main__background__contact1{
-        align-items: center;
-    }
+    /* Estilos de tutoriales */
 
     .main__background__primary--color2{
         flex-direction: column;
     }
 
+    .main__background__index--tutorials{
+        height: 1000px;
+    }
+    
     .main__tutorials{
         border-right-style: none;
         border-right-color: none;
@@ -1794,27 +1753,44 @@ footer nav a{
         text-align: center;
         border-bottom-style: none;
         border-bottom-color: none;
-        border-bottom-width: vnone;
+        border-bottom-width: none;
     }
 
+    #tejiendo{
+        width: 60%;
+    }
+
+    #width-mobile-manta{
+        width: 80%;
+        height: 350px;
+    }
+
+    #width-mobile-agarradera{
+        width: 80%;
+        height: 350px;
+    }
+
+    /* Estilos de contacto */
+    
+    .main__background__contact1{
+        align-items: center;
+    }
+
+    .form-control{
+        font-size: var(--text-xxxsmall);
+    }
 
     /* Estilo de About */
     .main__background__index--about{
         height: 1000px;
     }
+
+    /* Estilos de footer */
+
+    .footer__title{
+        font-size: var(--text-title-footer);
+    }
 }
-    
-
- /* Animaciones-transiciones-gradientes */
-
-.tutorial__item:hover{
-    text-decoration: underline;
-}
-
-.btn:hover{
-    color:var(--text-color-primary);
-}
-
 
 
 
