@@ -1,35 +1,35 @@
 /*Fuente de texto */
 
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Dosis:wght@300&family=Lato:wght@100;700&family=Open+Sans:wght@300;400&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Dosis:wght@300&family=Lato:wght@100;700&family=Open+Sans:wght@300;400&family=Roboto+Flex:opsz,wght@8..144,200&display=swap'); */
 
 /* Variables */
-
-:root{
+/* 
+:root{ */
     /* Colors */
-    --text-color-primary:#594E36;
+    /* --text-color-primary:#594E36;
     --text-color-primary-trans:#e7b444;
     --text-color-secundary: #FFFDED;
     --text-base-1:#FFFDED;
     --text-base-2:#F49F0A;
     --color-button-1:#f49e0a68;
-    --color-button-2:#fffded5c;
+    --color-button-2:#fffded5c; */
 
     /* Spacing */
-    --spacing-small: 3rem;
+    /* --spacing-small: 3rem;
     --spacing-xsmall:1.5rem;
     --spacing-xxsmall: 0.05rem;
     --spacing-items-header: 1.2em;
     --spacing-items-header-mobile: 1rem;
     --spacing-border-logo: 8.5rem;
-    --spacing-border-button: 0.5rem;
+    --spacing-border-button: 0.5rem; */
 
 
     /* Fonts-family */
-    --font-principal:'Darker Grotesque', sans-serif;
+    /* --font-principal:'Darker Grotesque', sans-serif; */
 
     /* Font-sizes */
-    --text-title: 9em;
+    /* --text-title: 9em;
     --text-title-mobile: 6em;
     --text-title-footer: 3.6em;
     --text-subtitle: 5em;
@@ -41,10 +41,10 @@
     --text-xxsmall: 1.3em;
     --text-xxxsmall: 1em;
     --text-items-header-2: 1.9em;
-}
+} */
 
 /* Normalize */
-
+/* 
 *{
     margin: 0;
     padding: 0;
@@ -58,11 +58,11 @@ html{
 body{
 
     font-family: var(--font-principal);
-}
+} */
 
 
 /* Estilos de header */
-
+/* 
 .main__header{
     display: flex;
     flex-direction: row;
@@ -107,25 +107,25 @@ ul{
 
 .main__item--bold{
     font-weight: bold;
-}
+} */
 
 /* Estilos de index bienvenida - Estilos de about */
 
-.main__background__index{
+/* .main__background__index{
     background-image: url(../img/conejos.jpg);
     width: 100%;
     background-size: cover;
     border-bottom-style: solid;
     border-bottom-color: var(--text-color-primary) ;
     border-width: var(--spacing-xxsmall);
-}
+} */
 
-.main__background__index--about{
+/* .main__background__index--about{
     background-image: url(../img/Manta.jpg);
     height: 750px;
-}
+} */
 
-h1{
+/* h1{
     font-size: var(--text-title);
     color: var(--text-color-primary);
     font-weight: bold;
@@ -144,9 +144,9 @@ h3{
     font-size: var(--text-large);
     color: var(--text-color-primary);
     font-weight: bold;
-}
+} */
 
-h4{
+/* h4{
     font-size: var(--text-small);
     color: var(--text-color-secundary);
     padding: var(--spacing-xsmall);  
@@ -159,15 +159,15 @@ h5{
     text-align: center;
     padding: var(--spacing-xsmall);
     margin-bottom: var(--spacing-small);
-}
+} */
 
-p{
+/* p{
     font-size: var(--text-medium);
     color: var(--text-color-primary);
     margin-top: var(--spacing-small);
-}
+} */
 
-.main__welcome{
+/* .main__welcome{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -201,8 +201,8 @@ p{
 
 .btn-outline-warning{
     color: var(--text-color-primary);
-}
-
+} */
+/* 
 .main__about{
     background-color: var(--text-base-2);
     background-size: cover;
@@ -213,9 +213,9 @@ p{
     flex-direction: row;
     justify-content: space-around;
     align-items: center; 
-}
+} */
 
-.main__about2{
+/* .main__about2{
     background-color: var(--text-base-1);
     background-size: cover;
     border-bottom-style: solid;
@@ -225,9 +225,9 @@ p{
     flex-direction: row;
     justify-content: space-around;
     align-items: start;
-}
+} */
 
-.main__about__image{
+/* .main__about__image{
     width: 50%;
     margin: var(--spacing-small);
     border-style: solid;
@@ -238,17 +238,17 @@ p{
 
 .main__about__image:hover{
     box-shadow: 0px 0px 10px var(--text-color-primary);
-}
+} */
 
-.main__about__image--width{
+/* .main__about__image--width{
     width: 70%;
-}
+} */
 
-.main__about__image--width1{
+/* .main__about__image--width1{
     width: 180%;
-}
+} */
 
-.main__parrafo{
+/* .main__parrafo{
     font-size: var(--text-medium);
     color: var(--text-color-secundary);
     margin: var(--spacing-small);
@@ -257,9 +257,9 @@ p{
     border-left-color: var(--text-color-secundary);
     border-left-style: solid;
     border-left-width: var(--spacing-xxsmall);
-}
+} */
 
-.card{
+/* .card{
     margin: var(--spacing-small);
     width: 400px;
     background-color: var(--text-base-1);
@@ -277,20 +277,20 @@ p{
     border-style: solid;
     border-width: var(--spacing-xxsmall);
     width: 330px;
-}
-
+} */
+/* 
 .card-body{
     text-align: center;
-}
+} */
 
 /* Estilos de galería */
 
-.main__background__index--galery{
+/* .main__background__index--galery{
     background-image: url(../img/galeria.jpg);
     height: 750px;
-}
+} */
 
-.main__background__primary{
+/* .main__background__primary{
     background-color: var(--text-base-2);
     background-size: cover;
     border-bottom-style: solid ;
@@ -314,51 +314,51 @@ p{
     font-size: var(--text-large);
     color: var(--text-color-secundary);
     font-weight: bold;
-}
+} */
 
-#img_bolso{
+/* #img_bolso{ */
     /* grid-area plato */
-    grid-column:  2 / 5;
+    /* grid-column:  2 / 5;
     grid-row: 3 / 5;
     width: 110%;   
 }
 
-#img_conejitas{
+#img_conejitas{ */
     /* grid-area conejitas */
-    grid-column: 6 / 12;
+    /* grid-column: 6 / 12;
     grid-row: 1 / 4;
     width: 80% ;
     margin-top: var(--spacing-small);
-}
+} */
 
-#img_osi{
+/* #img_osi{ */
     /* grid-area osi */
-    grid-column: 13 / 15;
+    /* grid-column: 13 / 15;
     grid-row: 3 / 6;
     width: 110%;
 }
 
-#img_conejo{
+#img_conejo{ */
     /* grid-area conejo */
-    grid-column: 1 / 6;
+    /* grid-column: 1 / 6;
     grid-row: 6 / 8;
     width: 80%;
-}
+} */
 
-#img_bolsa{
+/* #img_bolsa{ */
     /* grid-area bolsa */
-    grid-column: 7 / 11;
+    /* grid-column: 7 / 11;
     grid-row: 7 / 8;
     width: 80%;
-}
+} */
 
-#img_plato{
+/* #img_plato{
     /* grid-area plato */
-    grid-column: 12 / 15;
+    /* grid-column: 12 / 15;
     grid-row: 6 / 8;
     width: 130%;
-}
-
+}  */
+/* 
 .main__backgroud__galery__grid{
     background-color: var(--text-base-1);
     background-size: cover;
@@ -378,18 +378,18 @@ p{
 
 #nena_campestre{
         /* grid-area nena */
-        grid-column: 2 / 4;
+        /* grid-column: 2 / 4;
         grid-row: 1 / 2;
         transition: 0.5s;
-}
+} */
 
-#nena_campestre:hover{
+/* #nena_campestre:hover{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#conejitas_rosas{
+#conejitas_rosas{ */
         /* grid-area conejas-rosas */
-        grid-column: 4 / 10;
+        /* grid-column: 4 / 10;
         grid-row: 1 / 4;
         transition: 0.5s;
 }
@@ -398,9 +398,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#muñecas{
+#muñecas{ */
         /* grid-area muñecas-invierno */
-        grid-column: 10 / 13;
+        /* grid-column: 10 / 13;
         grid-row: 1 / 2;
         transition: 0.5s;
 }
@@ -409,9 +409,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#corazones{
+#corazones{ */
         /* grid-area corazones */
-        grid-column: 13 / 15;
+        /* grid-column: 13 / 15;
         grid-row: 1 / 3;
         justify-self: end;
         transition: 0.5s;
@@ -421,9 +421,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#portaloquequieras{
+#portaloquequieras{ */
         /* grid-area portaloquequieras */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 3 / 6;
         transition: 0.5s;
 }
@@ -432,9 +432,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#letras{
+#letras{ */
         /* grid-area letras */
-        grid-column: 10 / 13;
+        /* grid-column: 10 / 13;
         grid-row: 3 / 6;
         transition: 0.5s;
 }
@@ -443,9 +443,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#señores_conejos{
+#señores_conejos{ */
         /* grid-area señores-conejos */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 7 / 10;
         transition: 0.5s;
 }
@@ -454,9 +454,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#señor_osi{
+#señor_osi{ */
         /* grid-area señor-osi */
-        grid-column: 4 / 8;
+        /* grid-column: 4 / 8;
         grid-row: 5 / 9;
         transition: 0.5s;
 }
@@ -465,9 +465,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#plato_oliver{
+#plato_oliver{ */
         /* grid-area plato-oliver */
-        grid-column: 8 / 10;
+        /* grid-column: 8 / 10;
         grid-row: 7 / 9;
         width: 79%;
         transition: 0.5s;
@@ -477,9 +477,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#portaloquequieras_rosa{
+#portaloquequieras_rosa{ */
         /* grid-area portaloquequieras-rosa */
-        grid-column: 10 / 14;
+        /* grid-column: 10 / 14;
         grid-row: 7 / 10;
         transition: 0.5s;
 }
@@ -488,9 +488,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#sonajeros{
+#sonajeros{ */
         /* grid-area sonajeros */
-        grid-column: 14 / 15;
+        /* grid-column: 14 / 15;
         grid-row: 5 / 8;
         transition: 0.5s;
 }
@@ -499,9 +499,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#manta_triangulos{
+#manta_triangulos{ */
         /* grid-area manta-triangulos */
-        grid-column: 4 / 6;
+        /* grid-column: 4 / 6;
         grid-row: 9 / 10;
         align-self: end;
         transition: 0.5s;
@@ -511,9 +511,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#azucarera{
+#azucarera{ */
         /* grid-area azucarera */
-        grid-column: 6 / 10;
+        /* grid-column: 6 / 10;
         grid-row: 9 / 10;
         align-self: end;
         transition: 0.5s;
@@ -523,9 +523,9 @@ p{
     box-shadow: 0px 0px 10px var(--text-color-primary);
 }
 
-#muchos_conejos{
+#muchos_conejos{ */
     /* grid-area muchos-conejos */
-    grid-column: 14 / 15;
+    /* grid-column: 14 / 15;
         grid-row: 9 / 10;
         justify-self: end;
         width: 90%;
@@ -534,14 +534,14 @@ p{
 
 #muchos_conejos:hover{
     box-shadow: 0px 0px 10px var(--text-color-primary);
-}
+}  */
 
-.main__image{
+/* .main__image{
     border-style: solid;
     border-color: var(--text-color-primary);
     border-width: var(--spacing-xxsmall);
-}
-
+} */
+/* 
 .main__back__carousel{
     display: flex;
     flex-direction: row;
@@ -556,21 +556,21 @@ p{
 
 .carousel{
     transition: 0.5s;
-}
+} */
 
-.carousel:hover{
+/* .carousel:hover{
     box-shadow: 0px 0px 10px var(--text-color-primary);
-}
+} */
 
-.carousel-dark .carousel-indicators [data-bs-target]{
+/* .carousel-dark .carousel-indicators [data-bs-target]{
     background-color: var(--text-color-primary) ;
 }
 
 .carousel-item{
     transition: transform 2s ease-in-out;
-}
+} */
 
-.main__description{
+/* .main__description{
     font-size: none;
     color: var(--text-color-secundary);
     margin: var(--spacing-small);
@@ -579,45 +579,45 @@ p{
     border-right-color: var(--text-color-secundary);
     border-right-style: solid;
     border-right-width: var(--spacing-xxsmall);
-}
-
+} */
+/* 
 .main__description--modified{
     color: var(--text-color-primary);
     text-align: left;
     border-left-color: var(--text-color-primary);
     border-left-style: solid;
     border-left-width: var(--spacing-xxsmall);
-}
+} */
 
-.color__2{
+/* .color__2{
     font-size: var(--text-large);
     color: var(--text-color-secundary);
     font-weight: bold;
-}
-
+} */
+/* 
 .colorp__2{
     font-size: var(--text-medium);
     color: var(--text-color-secundary);
     margin-top: var(--spacing-small);
-}
+} */
 
 /* Estilos de tutoriales */
 
-.main__background__primary--color2{
+/* .main__background__primary--color2{
     background-color: var(--text-base-1);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: start;
     align-content: center;
-}
+} */
 
-.main__background__index--tutorials{
+/* .main__background__index--tutorials{
     background-image: url(../img/tutorial.jpg);
     height: 750px;
-}
+} */
 
-.main__tutorials{
+/* .main__tutorials{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -626,8 +626,8 @@ p{
     border-right-color: var(--text-color-primary);
     border-right-width: var(--spacing-xxsmall);
     padding: var(--spacing-xsmall); 
-}
-
+} */
+/* 
 .main__tutorials--modified{
     display: flex;
     flex-direction: column;
@@ -635,33 +635,33 @@ p{
     margin: var(--spacing-small);
     border-right-style: none;
     padding: var(--spacing-xxsmall);
-}
+} */
 
-ol{
+/* ol{
     font-size: var(--text-medium);
     text-align: center;
     margin: var(--spacing-small);
-} 
-
+}  */
+/* 
 .tutorial__item{
     text-decoration: none;
     font-weight: bold;
     color: var(--text-color-primary);
     transition: all 1s text-decoration;
-}
+} */
 
-.tutorial__item:hover{
+/* .tutorial__item:hover{
     text-decoration: underline;
-}
+} */
 
 /* Estilos de contacto */
-
+/* 
 .main__background__index--contact{
     background-image: url(../img/contact.jpg);
     height: 750px;
-}
+} */
 
-.main__background__contact1{
+/* .main__background__contact1{
     background-color: var(--text-base-2);
     height: 620px;
     display: flex;
@@ -680,8 +680,8 @@ ol{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; 
-}
-
+} */
+/* 
 .form-floating{
     font-size: var(--text-xsmall);
 }
@@ -689,11 +689,11 @@ ol{
 .form-control{
     border-color: var(--text-color-primary);
     font-size: var(--text-xsmall);
-}
+} */
 
 /* Estilos de footer */
 
-footer{
+/* footer{
     background-color: var(--text-base-2);
     color: var(--text-color-secundary);
     background-size: cover;
@@ -712,17 +712,17 @@ footer{
 footer nav a{
     margin: var(--spacing-border-button);
     padding: var(--spacing-xxsmall);
-}
+} */
 
 /* Media Querie */
 
 /* Tablet */
-
+/* 
 @media screen and (min-width: 481px) and (max-width: 978px){
     
     /* Header */
 
-    .header__logo{
+    /* .header__logo{
         width: 20%;
     }
 
@@ -733,10 +733,10 @@ footer nav a{
     .main__item{
         font-size: var(--text-small);
         margin: var(--spacing-items-header-mobile);
-    }
+    } */
 
     /* Estilos index main bienvenida - Estilos main About */
-
+/* 
     .main__welcome{
         flex-direction: column;    
     }
@@ -786,12 +786,12 @@ footer nav a{
     .card-img-top{
         width: 310px;
         text-align: center;
-    }
+    } */
 
     /* Estilos de galería */
     
-    .grid__area__galery{
-        grid-template-columns: repeat(10, 1fr);
+    /* .grid__area__galery{ */
+        /* grid-template-columns: repeat(10, 1fr);
         grid-template-rows: .7fr .7fr 1fr .8fr .2fr .7fr .6fr;
         margin-left: 5px;
         margin-right: 5px;
@@ -800,42 +800,42 @@ footer nav a{
         column-gap: 10px;
     }
     
-    #nena_campestre{
+    #nena_campestre{ */
         /* grid-area nena */
-        grid-column: 1 / 3;
+        /* grid-column: 1 / 3;
         grid-row: 1 / 3;
         width: 100%;
         justify-self: stretch;
         margin-top: var(--spacing-small);
     }
  
-    #conejitas_rosas{
+    #conejitas_rosas{ */
         /* grid-area conejas-rosas */
-        grid-column: 3 / 7;
+        /* grid-column: 3 / 7;
         grid-row: 1 / 3;
         width: 100%;
     }
  
-    #muñecas{
+    #muñecas{ */
         /* grid-area muñecas-invierno */
-        grid-column: 7 / 10;
+        /* grid-column: 7 / 10;
         grid-row: 1 / 2;
         width: 95%;
         margin-left: var(--spacing-xsmall);
     }
      
-    #manta_triangulos{
+    #manta_triangulos{ */
         /* grid-area manta-triangulos */
-        grid-column: 4 / 6;
+        /* grid-column: 4 / 6;
         grid-row: 6 / 7;
         width: 80%;
         align-self: stretch;
         justify-self: stretch;
     }
 
-    #sonajeros{
+    #sonajeros{ */
         /* grid-area sonajeros */
-        grid-column: 8 / 11;
+        /* grid-column: 8 / 11;
         grid-row: 3 / 6;
         width: 80%;
         justify-self: end;
@@ -844,18 +844,18 @@ footer nav a{
         margin-right: var(--spacing-small);
     }
     
-    #plato_oliver{
+    #plato_oliver{ */
         /* grid-area plato-oliver */
-        grid-column: 6 / 8;
+        /* grid-column: 6 / 8;
         grid-row: 4 / 6;
         width: 100%;
         justify-self: center;
         margin-left:  var(--spacing-small);
     }
 
-    #corazones{
+    #corazones{ */
         /* grid-area corazones */
-        grid-column: 7 / 11;
+        /* grid-column: 7 / 11;
         grid-row: 2 / 6;
         width: 90%;
         align-self: start;
@@ -863,18 +863,18 @@ footer nav a{
         
     }
 
-    #portaloquequieras{
+    #portaloquequieras{ */
         /* grid-area portaloquequieras */
-        grid-column: 1 / 3;
+        /* grid-column: 1 / 3;
         grid-row: 2 / 4;
         width: 100%;
         align-self: center;
         
     }
     
-    #letras{
+    #letras{ */
         /* grid-area letras */
-        grid-column: 3 / 7;
+        /* grid-column: 3 / 7;
         grid-row: 2 / 4;
         width: 99%;
         align-self: center ;
@@ -883,9 +883,9 @@ footer nav a{
 
     }
     
-    #señores_conejos{
+    #señores_conejos{ */
         /* grid-area señores-conejos */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 3 / 8;
         width: 100%;
         align-self:end;
@@ -893,26 +893,26 @@ footer nav a{
 
     }
 
-    #señor_osi{
+    #señor_osi{ */
         /* grid-area señor-osi */
-        grid-column: 4 / 6;
+        /* grid-column: 4 / 6;
         grid-row: 4 / 5;
         width: 100%;
         align-self: center;
     }
 
-    #portaloquequieras_rosa{
+    #portaloquequieras_rosa{ */
         /* grid-area portaloquequieras-rosa */
-        grid-column: 6 / 8;
+        /* grid-column: 6 / 8;
         grid-row: 6 / 8;
         width: 150%;
         justify-self: start;
         align-self: end;
     }
 
-    #azucarera{
+    #azucarera{ */
         /* grid-area azucarera */
-        grid-column: 8 / 11;
+        /* grid-column: 8 / 11;
         grid-row: 7 / 7;
         width: 60%;
         align-self: end;
@@ -920,9 +920,9 @@ footer nav a{
         margin-bottom: var(--spacing-small);
     }
     
-    #muchos_conejos{
+    #muchos_conejos{ */
         /* grid-area muchos-conejos */
-        grid-column: 8 / 11;
+        /* grid-column: 8 / 11;
         grid-row: 6 / 7;
         width: 40%;
         align-self: start;
@@ -963,28 +963,28 @@ footer nav a{
 
     /* Estilos de tutoriales */
 
-    .main__background__index--tutorials{
+    /* .main__background__index--tutorials{
         height: 900px;
     }
     
     #tejiendo{
         width: 100%;
-    }
+    } */
 
     /* Estilos de contacto */
     
-    .main__background__contact1{
+    /* .main__background__contact1{
         align-items: center;
     }
-}
+} */
 
 /* Mobile */ 
 
-@media screen and (min-width: 321px) and (max-width: 480px){
-    
+/* @media screen and (min-width: 321px) and (max-width: 480px){
+     */
     /* Header */
     
-    .main__header{
+    /* .main__header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1006,9 +1006,9 @@ footer nav a{
         margin: var(--spacing-items-header-button);
         padding: var(--spacing-items-header-mobile);
     }
-    
+     */
     /* Estilos de index bienvenida - Estilos de about */
-    
+/*     
     .main__background__index--about{
         height: 1000px;
     }
@@ -1088,11 +1088,11 @@ footer nav a{
     .card-img-top{
         width: 180px;
         text-align: center;
-    }
+    } */
     
     /* Estilos de galería */
     
-    .grid__area{
+    /* .grid__area{
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(.4fr .6fr .4fr .3fr .8fr .2fr .8fr .5fr);
     }
@@ -1105,50 +1105,50 @@ footer nav a{
         align-self: start;
     }
     
-    #img_bolso{
+    #img_bolso{ */
         /* grid-area bolso */
-        grid-column:  1 / 3;
+        /* grid-column:  1 / 3;
         grid-row: 2 / 3;
         width: 120%;
         margin-left: var(--spacing-small);
         justify-self: start;
     }
 
-    #img_conejitas{
+    #img_conejitas{ */
         /* grid-area conejitas */
-        grid-column: 3 / 7;
+        /* grid-column: 3 / 7;
         grid-row: 1 / 4;
         width: 70% ;
         margin-top: var(--spacing-small);
         justify-self: end;       
     }
 
-    #img_osi{
+    #img_osi{ */
         /* grid-area osi */
-        grid-column: 6 / 7;
+        /* grid-column: 6 / 7;
         grid-row: 5 / 6;
         width: 112%;
     }
     
-    #img_conejo{
+    #img_conejo{ */
         /* grid-area conejo */
-        grid-column: 1 / 6;
+        /* grid-column: 1 / 6;
         grid-row: 4 / 7;
         width: 80%;
         align-self: start;
     }
 
-    #img_bolsa{
+    #img_bolsa{ */
         /* grid-area bolsa */
-        grid-column: 4 / 7;
+        /* grid-column: 4 / 7;
         grid-row: 8 / 8;
         width: 80%;
         justify-self: end;
     }
 
-    #img_plato{
+    #img_plato{ */
         /* grid-area plato */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 7 / 8;
         width: 100%;
     }
@@ -1163,114 +1163,114 @@ footer nav a{
        column-gap: 10px;
     }
         
-    #nena_campestre{
+    #nena_campestre{ */
         /* grid-area nena */
-        grid-column: 6 / 8;
+        /* grid-column: 6 / 8;
         grid-row: 1 / 2;
         width: 100%;
         justify-self: end;
         align-self: end;
     }
 
-    #conejitas_rosas{
+    #conejitas_rosas{ */
         /* grid-area conejas-rosas */
-        grid-column: 1 / 6;
+        /* grid-column: 1 / 6;
         grid-row: 1 / 2;
         width: 100%;
         justify-self: start;
         align-self: end;
     }
     
-    #muñecas{
+    #muñecas{ */
         /* grid-area muñecas-invierno */
-        grid-column: 1 / 6;
+        /* grid-column: 1 / 6;
         grid-row: 2 / 3;
         align-self: start;
         width: 100%;
     }
     
-    #manta_triangulos{
+    #manta_triangulos{ */
         /* grid-area manta-triangulos */
-        grid-column: 5 / 8;
+        /* grid-column: 5 / 8;
         grid-row: 9 / 10;
         width: 100%;
     }
 
-    #sonajeros{
+    #sonajeros{ */
         /* grid-area sonajeros */
-        grid-column: 4 / 8;
+        /* grid-column: 4 / 8;
         grid-row: 3 / 4;
         width: 80%;
         justify-self: start;
         align-self: start;
     }
     
-    #plato_oliver{
+    #plato_oliver{ */
         /* grid-area plato-oliver */
-        grid-column: 6 / 8;
+        /* grid-column: 6 / 8;
         grid-row: 2 / 3;
         width: 100%;
     }
 
-    #corazones{
+    #corazones{ */
         /* grid-area corazones */
-        grid-column: 4 / 8;
+        /* grid-column: 4 / 8;
         grid-row: 4 / 5;
         width: 100%;
         align-self: start;
         justify-self: start;
     }
 
-    #portaloquequieras{
+    #portaloquequieras{ */
         /* grid-area portaloquequieras */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 3 / 4;
         width: 100%;
     }
 
-    #letras{
+    #letras{ */
         /* grid-area letras */
-        grid-column: 1 / 5;
+        /* grid-column: 1 / 5;
         grid-row: 8 / 9;
         width: 100%;
         align-self:end ;
     }
 
-    #señores_conejos{
+    #señores_conejos{ */
         /* grid-area señores-conejos */
-        grid-column: 1 / 5;
+        /* grid-column: 1 / 5;
         grid-row: 5 / 7;
         width: 100%;
         align-self:end ;
     }
 
-    #señor_osi{
+    #señor_osi{ */
         /* grid-area señor-osi */
-        grid-column: 5 / 8;
+        /* grid-column: 5 / 8;
         grid-row: 6 / 7;
         width: 100%;
         justify-self: start;
         align-self: start;
     }
 
-    #portaloquequieras_rosa{
+    #portaloquequieras_rosa{ */
         /* grid-area portaloquequieras-rosa */
-        grid-column: 5 / 8;
+        /* grid-column: 5 / 8;
         grid-row: 7 / 9;
         width: 100%;
         align-self: end;
     }
 
-    #azucarera{
+    #azucarera{ */
         /* grid-area azucarera */
-        grid-column: 1 / 5;
+        /* grid-column: 1 / 5;
         grid-row: 9 / 10;
         width: 100%;
     }
 
-    #muchos_conejos{
+    #muchos_conejos{ */
         /* grid-area muchos-conejos */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 4 / 5;
         justify-self: start;
         width: 100%;
@@ -1313,11 +1313,11 @@ footer nav a{
 
     .colorp__2{
         font-size: var(--text-small);
-    }
+    } */
     
     /* Estilos de tutoriales*/
     
-    .main__background__primary--color2{
+    /* .main__background__primary--color2{
         flex-direction: column;
     }
     
@@ -1351,32 +1351,32 @@ footer nav a{
     
     #width-mobile-agarradera{
         width: 85%;
-    }
+    } */
 
     /* Estilos de contacto*/
     
-    .main__background__contact1{
+    /* .main__background__contact1{
         align-items: center;
     }
     
     .form-control{
         font-size: var(--text-xxsmall);
-    } 
+    }  */
     
     /*Estilo de footer */
     
-    .footer__title{
+    /* .footer__title{
         font-size: var(--text-title-footer);
     }
-}
+} */
 
 /* Mobile pequeño */
 
-@media screen and (max-width: 320px){
+/* @media screen and (max-width: 320px){ */
     
     /* Header */
 
-    .main__header{
+    /* .main__header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1401,11 +1401,11 @@ footer nav a{
         font-size: var(--text-xxsmall);
         margin: var(--spacing-items-header-button);
         padding: var(--spacing-border-button);
-    }
+    } */
 
     /* Estilos de index  bienvenida - Estilos de about */
     
-    h1{
+    /* h1{
         font-size: var(--text-subtitle);
     }
 
@@ -1493,11 +1493,11 @@ footer nav a{
 
     .card-text{
         font-size: var(--text-small);
-    }
+    } */
 
     /* Estilos de galería */
 
-    .grid__area{
+    /* .grid__area{
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(.4fr .6fr .4fr .3fr .8fr .2fr .8fr .5fr);
     }
@@ -1510,50 +1510,50 @@ footer nav a{
         align-self: start;
     }
 
-    #img_bolso{
+    #img_bolso{ */
         /* grid-area bolso */
-        grid-column:  1 / 3;
+        /* grid-column:  1 / 3;
         grid-row: 2 / 3;
         width: 120%;
         margin-left: var(--spacing-small);
         justify-self: start;
     }
 
-    #img_conejitas{
+    #img_conejitas{ */
         /* grid-area conejitas */
-        grid-column: 3 / 7;
+        /* grid-column: 3 / 7;
         grid-row: 1 / 4;
         width: 60% ;
         margin-top: var(--spacing-small);
         justify-self: end;
     }
 
-    #img_osi{
+    #img_osi{ */
         /* grid-area osi */
-        grid-column: 6 / 7;
+        /* grid-column: 6 / 7;
         grid-row: 5 / 6;
         width: 112%;
     }
 
-    #img_conejo{
+    #img_conejo{ */
         /* grid-area conejo */
-        grid-column: 1 / 6;
+        /* grid-column: 1 / 6;
         grid-row: 4 / 7;
         width: 80%;
         align-self: start;
     }
 
-    #img_bolsa{
+    #img_bolsa{ */
         /* grid-area bolsa */
-        grid-column: 4 / 7;
+        /* grid-column: 4 / 7;
         grid-row: 8 / 8;
         width: 80%;
         justify-self: end;
     }
 
-    #img_plato{
+    #img_plato{ */
         /* grid-area plato */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 7 / 8;
         width: 100%;
     }
@@ -1568,114 +1568,114 @@ footer nav a{
        column-gap: 10px;
     }
         
-    #nena_campestre{
+    #nena_campestre{ */
         /* grid-area nena */
-        grid-column: 6 / 8;
+        /* grid-column: 6 / 8;
         grid-row: 1 / 2;
         width: 100%;
         justify-self: end;
         align-self: end;
     }
 
-    #conejitas_rosas{
+    #conejitas_rosas{ */
         /* grid-area conejas-rosas */
-        grid-column: 1 / 6;
+        /* grid-column: 1 / 6;
         grid-row: 1 / 2;
         width: 100%;
         justify-self: start;
         align-self: end;
     }
 
-    #muñecas{
+    #muñecas{ */
         /* grid-area muñecas-invierno */
-        grid-column: 1 / 6;
+        /* grid-column: 1 / 6;
         grid-row: 2 / 3;
         align-self: start;
         width: 100%;
     }
     
-    #manta_triangulos{
+    #manta_triangulos{ */
         /* grid-area manta-triangulos */
-        grid-column: 5 / 8;
+        /* grid-column: 5 / 8;
         grid-row: 9 / 10;
         width: 100%;
     }
 
-    #sonajeros{
+    #sonajeros{ */
         /* grid-area sonajeros */
-        grid-column: 4 / 8;
+        /* grid-column: 4 / 8;
         grid-row: 3 / 4;
         width: 80%;
         justify-self: start;
         align-self: start;
     }
     
-    #plato_oliver{
+    #plato_oliver{ */
         /* grid-area plato-oliver */
-        grid-column: 6 / 8;
+        /* grid-column: 6 / 8;
         grid-row: 2 / 3;
         width: 100%;
     }
 
-    #corazones{
+    #corazones{ */
         /* grid-area corazones */
-        grid-column: 4 / 8;
+        /* grid-column: 4 / 8;
         grid-row: 4 / 5;
         width: 100%;
         align-self: start;
         justify-self: start;
     }
 
-    #portaloquequieras{
+    #portaloquequieras{ */
         /* grid-area portaloquequieras */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 3 / 4;
         width: 100%;
     }
 
-    #letras{
+    #letras{ */
         /* grid-area letras */
-        grid-column: 1 / 5;
+        /* grid-column: 1 / 5;
         grid-row: 8 / 9;
         width: 100%;
         align-self:end ;
     }
 
-    #señores_conejos{
+    #señores_conejos{ */
         /* grid-area señores-conejos */
-        grid-column: 1 / 5;
+        /* grid-column: 1 / 5;
         grid-row: 5 / 7;
         width: 100%;
         align-self:end ;
     }
 
-    #señor_osi{
+    #señor_osi{ */
         /* grid-area señor-osi */
-        grid-column: 5 / 8;
+        /* grid-column: 5 / 8;
         grid-row: 6 / 7;
         width: 100%;
         justify-self: start;
         align-self: start;
     }
 
-    #portaloquequieras_rosa{
+    #portaloquequieras_rosa{ */
         /* grid-area portaloquequieras-rosa */
-        grid-column: 5 / 8;
+        /* grid-column: 5 / 8;
         grid-row: 7 / 9;
         width: 100%;
         align-self: end;
     }
 
-    #azucarera{
+    #azucarera{ */
         /* grid-area azucarera */
-        grid-column: 1 / 5;
+        /* grid-column: 1 / 5;
         grid-row: 9 / 10;
         width: 100%;
     }
 
-    #muchos_conejos{
+    #muchos_conejos{ */
         /* grid-area muchos-conejos */
-        grid-column: 1 / 4;
+        /* grid-column: 1 / 4;
         grid-row: 4 / 5;
         justify-self: start;
         width: 100%;
@@ -1728,11 +1728,11 @@ footer nav a{
 
     .text1--mod{ 
         font-weight: normal;
-    }
+    } */
 
     /* Estilos de tutoriales */
 
-    .main__background__primary--color2{
+    /* .main__background__primary--color2{
         flex-direction: column;
     }
 
@@ -1768,30 +1768,29 @@ footer nav a{
     #width-mobile-agarradera{
         width: 80%;
         height: 350px;
-    }
+    } */
 
     /* Estilos de contacto */
-    
+/*     
     .main__background__contact1{
         align-items: center;
     }
 
     .form-control{
         font-size: var(--text-xxxsmall);
-    }
+    } */
 
     /* Estilo de About */
-    .main__background__index--about{
+    /* .main__background__index--about{
         height: 1000px;
-    }
+    } */
 
     /* Estilos de footer */
-
+/* 
     .footer__title{
         font-size: var(--text-title-footer);
     }
-}
-
+} */ 
 
 
 
