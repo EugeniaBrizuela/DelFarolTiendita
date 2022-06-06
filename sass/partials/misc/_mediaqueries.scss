@@ -277,7 +277,7 @@
         .main__item{
             text-align: center;
             font-size: $text-xsmall;
-            margin: $spacing-items-header-button;
+            margin: $spacing-border-button;
             padding: $spacing-items-header-mobile;
         }
     }
@@ -672,7 +672,7 @@
             .main__item{
                 text-align: center;
                 font-size: $text-xxsmall;
-                margin: $spacing-items-header-button;
+                margin: $spacing-border-button;
                 padding: $spacing-border-button;
             }
         }
