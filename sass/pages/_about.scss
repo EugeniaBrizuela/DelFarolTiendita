@@ -1,0 +1,69 @@
+/* About */
+
+.main__background__index--about{
+    background-image: url(../img/Manta.jpg);
+    height: 750px;
+}
+
+.main__about{
+    background-color: $text-base-2;
+    background-size: cover;
+    border-bottom-style: solid;
+    border-bottom-color: $text-color-primary;
+    border-width: $spacing-xxsmall;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+
+    .main__about__image--width1{
+        width: 180%;
+    }
+    
+    .main__parrafo{
+        font-size: $text-medium;
+        color: $text-color-secundary;
+        margin: $spacing-small;
+        padding-left: $spacing-small;
+        text-align: left;
+        border-left-color: $text-color-secundary;
+        border-left-style: solid;
+        border-left-width: $spacing-xxsmall;
+    }    
+}
+
+.main__about2{
+    background-color: $text-base-1;
+    background-size: cover;
+    border-bottom-style: solid;
+    border-bottom-color: $text-color-primary;
+    border-width: $spacing-xxsmall;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+
+    .card{
+        margin: $spacing-small;
+        width: 400px;
+        background-color: $text-base-1;
+        transition: 0.6s;
+
+        &:hover{
+            box-shadow: 0px 0px 10px $text-color-primary;
+        }
+
+        &-img-top{
+            margin: $spacing-small;
+            text-align: center;
+            border-color: $text-color-primary;
+            border-style: solid;
+            border-width: $spacing-xxsmall;
+            width: 330px;
+        }
+
+        &-body{
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+/* Footer */
+
+footer{
+    background-color: $text-base-2;
+    color: $text-color-secundary;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .footer__title{
+        font-size: $text-title;
+        color: $text-color-secundary;
+        margin-bottom: $spacing-xxsmall;
+    }
+
+    & nav a{
+        margin: $spacing-border-button;
+        padding: $spacing-xxsmall;
+    }
+
+    h4{
+        font-size: $text-small;
+        color: $text-color-secundary;
+        padding: $spacing-xsmall;  
+        text-align: center; 
+    }
+    
+    h5{
+        font-size: $text-xsmall;
+        color: $text-color-secundary;
+        text-align: center;
+        padding: $spacing-xsmall;
+        margin-bottom: $spacing-small;
+    }
+}

@@ -1,0 +1,68 @@
+/* Header */
+
+.main__background__index{
+    background-image: url(../img/conejos.jpg);
+    width: 100%;
+    background-size: cover;
+    border-bottom-style: solid;
+    border-bottom-color: $text-color-primary;
+    border-width: $spacing-xxsmall;
+
+    .main__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom-style: solid;
+        border-bottom-color: $text-color-primary;
+        border-width: $spacing-xxsmall;
+    
+        .header__logo{
+            width: 15%;
+            border-radius: $spacing-border-logo ;
+            margin: $spacing-xsmall;
+        }
+    
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: $spacing-small;
+            margin-left: $spacing-xsmall;
+            text-decoration: none;
+            list-style: none;
+    
+            .main__item{
+                font-size: $text-items-header;
+                text-decoration: none;
+                margin: $spacing-items-header;
+                color: $text-color-primary;
+                border-bottom: $spacing-xxsmall solid transparent;
+                transition: all .3s ease-in;
+    
+                &:hover{
+                    color: $text-color-primary-trans;
+                    border-bottom-color: $text-color-primary-trans;
+                    border-bottom-style: solid;
+                    border-bottom-width: $spacing-xxsmall;
+                }
+            }
+    
+            .main__item--bold{
+                font-weight: bold;
+            }
+        
+        }
+    }
+}
+
+
+
+
+    
+
+
+
+
+
+

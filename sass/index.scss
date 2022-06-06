@@ -1,0 +1,215 @@
+/* Externos */
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Dosis:wght@300&family=Lato:wght@100;700&family=Open+Sans:wght@300;400&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+/* Misc */
+
+@import "./partials/misc/variables";
+@import "./partials/misc/normalize";
+
+/* Partials */ 
+
+@import "./partials/header";
+@import "./partials/footer";
+
+/* Pages */
+
+/* Index */
+
+.main__background__index{
+    background-image: url(../img/conejos.jpg);
+    width: 100%;
+    background-size: cover;
+    border-bottom-style: solid;
+    border-bottom-color: $text-color-primary;
+    border-width: $spacing-xxsmall;
+
+    h1{
+        font-size: $text-title;
+        color:$text-color-primary;
+        font-weight: bold;
+        text-align: center;
+        padding: $spacing-border-logo;   
+    }
+
+    h2{
+        font-size: $text-subtitle;
+        color: $text-color-primary;
+        text-align: center;
+        padding-bottom: $spacing-border-logo;  
+    }
+
+    .main__welcome{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: $spacing-border-logo;
+        margin-bottom: $spacing-small;
+
+        h3{
+            font-size: $text-large;
+            color: $text-color-primary;
+            font-weight: bold; 
+        }
+
+        .main__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: $spacing-items-header;
+            padding-left: $spacing-border-logo;
+            border-left-style: solid;
+            border-left-color: $text-color-primary;
+            border-width: $spacing-xxsmall;
+
+            p{
+                font-size: $text-medium;
+                color: $text-color-primary;
+                margin-top: $spacing-small;
+            }
+
+            .btn{
+                color: $text-base-2;
+                font-size: $text-small;
+                border:#F49F0A solid;
+                margin-top: $spacing-small;
+
+                &:hover{
+                    color:$text-color-primary;
+                }
+
+                &-outline-warning{
+                    color: $text-color-primary;
+                }
+            }
+        }
+    }
+}
+
+.main__background__primary{
+    background-color: $text-base-2;
+    background-size: cover;
+    border-bottom-style: solid ;
+    border-bottom-color: $text-color-primary;
+    border-width: $spacing-xxsmall;
+
+    .grid__area{
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: .8fr .3fr .8fr .3fr .1fr .9fr .8fr .1fr;
+        margin-left: $spacing-small;
+        margin-right: $spacing-small;
+        justify-items: center;
+        justify-content: center;
+
+        .main__titulo{
+            grid-column: 6 / 12;
+            grid-row: 5 / 6;
+            font-size: $text-large;
+            color: $text-color-secundary;
+            font-weight: bold;
+        }
+
+        .main__image{
+            border-style: solid;
+            border-color: $text-color-primary;
+            border-width: $spacing-xxsmall;
+        }
+
+        #img_bolso{
+             /* grid-area plato */
+            grid-column:  2 / 5;
+            grid-row: 3 / 5;
+            width: 110%;
+        }
+
+        #img_conejitas{
+            /* grid-area conejitas */
+            grid-column: 6 / 12;
+            grid-row: 1 / 4;
+            width: 80% ;
+            margin-top: $spacing-small;
+        }
+        
+        #img_osi{
+            /* grid-area osi */
+            grid-column: 13 / 15;
+            grid-row: 3 / 6;
+            width: 110%;
+        }
+        
+        #img_conejo{
+            /* grid-area conejo */
+            grid-column: 1 / 6;
+            grid-row: 6 / 8;
+            width: 80%;
+        }
+        
+        #img_bolsa{
+            /* grid-area bolsa */
+            grid-column: 7 / 11;
+            grid-row: 7 / 8;
+            width: 80%;
+        }
+        
+        #img_plato{
+            /* grid-area plato */
+            grid-column: 12 / 15;
+            grid-row: 6 / 8;
+            width: 130%;
+        }
+    }
+}
+
+.main__background__primary--color2{
+    background-color: $text-base-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    align-content: center;
+
+    .main__tutorials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: $spacing-small;
+        border-right-style: solid;
+        border-right-color: $text-color-primary;
+        border-right-width: $spacing-xxsmall;
+        padding: $spacing-xsmall; 
+
+        ol{
+            font-size: $text-medium;
+            text-align: center;
+            margin: $spacing-small;
+
+            .tutorial__item{
+                text-decoration: none;
+                font-weight: bold;
+                color: $text-color-primary;
+                transition: all 1s text-decoration;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }    
+    }
+
+    .main__tutorials--modified{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: $spacing-small;
+        border-right-style: none;
+        padding: $spacing-xxsmall;
+    }
+}
+
+@import "./pages/about";
+@import "./pages/galeria";
+@import "./pages/tutoriales";
+@import "./pages/contacto";
