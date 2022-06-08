@@ -56,9 +56,9 @@
     }
 }
 
+/* Media Queries header */
+
 @media screen and (min-width: 481px) and (max-width: 978px){
-    
-    /* Header */
 
     .main__background__index .main__header .header__logo{
         width: 20%;
@@ -75,8 +75,6 @@
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px){
-    
-    /* Header */
     
     .main__background__index .main__header{
         flex-direction: column;
@@ -103,8 +101,6 @@
 }
 
 @media screen and (max-width: 320px){
-    
-    /* Header */
 
     .main__background__index .main__header{
         flex-direction: column;

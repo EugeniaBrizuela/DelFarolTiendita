@@ -38,9 +38,9 @@ footer {
     }
 }
 
+/* Media Queries footer */
+
 @media screen and (min-width: 321px) and (max-width: 480px){
-    
-    /*Estilo de footer */
     
     footer .footer__title{
         font-size: $text-title-footer;
@@ -53,8 +53,6 @@ footer {
 }
 
 @media screen and (max-width: 320px){
-    
-    /* Estilos de footer */
 
     footer .footer__title{
         font-size: $text-title-footer;
