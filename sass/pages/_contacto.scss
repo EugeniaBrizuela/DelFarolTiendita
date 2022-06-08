@@ -17,12 +17,30 @@
     align-items: start;
     padding: $spacing-small;
 
+    .color__2{
+        font-size: $text-large;
+        color: $text-color-secundary;
+        font-weight: bold;
+    }
+
     .form-floating{
         font-size: $text-xsmall;
 
         .form-control{
             border-color: $text-color-primary;
             font-size: $text-xsmall;
+            margin-bottom: $spacing-xsmall;
+        }
+    }
+
+    .btn{
+        color: $text-base-2;
+        font-size: $text-small;
+        border:#F49F0A solid;
+        margin-top: $spacing-small;
+
+        &-outline-warning{
+            color: $text-color-primary;
         }
     }
 }
@@ -32,5 +50,40 @@
     height: 620px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+    
+    h3{
+        font-size: $text-large;
+        color: $text-color-primary;
+        font-weight: bold; 
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 978px){
+    
+    .main__background__contact1{
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
+        
+    .main__background__contact1{
+        align-items: center;
+
+        .container .form-floating .form-control{
+            font-size: $text-xxsmall;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    .main__background__contact1{
+        align-items: center;
+        
+        .container .form-floating .form-control{
+            font-size: $text-xxxsmall;
+        }
+    }
 }

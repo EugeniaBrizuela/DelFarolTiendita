@@ -56,6 +56,86 @@
     }
 }
 
+@media screen and (min-width: 481px) and (max-width: 978px){
+    
+    /* Header */
+
+    .main__background__index .main__header .header__logo{
+        width: 20%;
+
+        ul{
+            justify-content: flex-start;
+
+            .main__item{
+                font-size: $text-small;
+                margin: $spacing-items-header-mobile;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
+    
+    /* Header */
+    
+    .main__background__index .main__header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            text-align: center;
+
+            .header__logo{
+                width: 20%;
+                margin: $spacing-xxsmall;
+                text-align: center;
+            }
+        }
+
+        nav ul .main__item{
+            text-align: center;
+            font-size: $text-xsmall;
+            margin: $spacing-border-button;
+            padding: $spacing-items-header-mobile;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    /* Header */
+
+    .main__background__index .main__header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            text-align: center;
+
+            .header__logo{
+                width: 22%;
+                margin: $spacing-xxsmall;
+                text-align: center;
+            }
+        }
+
+        nav ul{
+            justify-content: center;
+
+            .main__item{
+                text-align: center;
+                font-size: $text-xxsmall;
+                margin: $spacing-border-button;
+                padding: $spacing-border-button;
+            }
+        }
+    }
+}
+
+
+
 
 
 

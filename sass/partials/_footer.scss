@@ -1,6 +1,6 @@
 /* Footer */
 
-footer{
+footer {
     background-color: $text-base-2;
     color: $text-color-secundary;
     background-size: cover;
@@ -13,9 +13,11 @@ footer{
         font-size: $text-title;
         color: $text-color-secundary;
         margin-bottom: $spacing-xxsmall;
+        padding: $spacing-small;
+        text-align: center;
     }
 
-    & nav a{
+    nav a{
         margin: $spacing-border-button;
         padding: $spacing-xxsmall;
     }
@@ -35,3 +37,33 @@ footer{
         margin-bottom: $spacing-small;
     }
 }
+
+@media screen and (min-width: 321px) and (max-width: 480px){
+    
+    /*Estilo de footer */
+    
+    footer .footer__title{
+        font-size: $text-title-footer;
+        text-align: center;
+    }
+
+    footer h4{
+        font-size: $text-xsmall;
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    /* Estilos de footer */
+
+    footer .footer__title{
+        font-size: $text-title-footer;
+        text-align: center;
+    }
+    
+    footer h4{
+        font-size: $text-xsmall;
+    }
+}
+
+

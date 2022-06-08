@@ -5,3 +5,43 @@
     height: 750px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 978px){
+    
+    .main__background__index--tutorials{
+        height: 900px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
+    
+    .main__background__index--tutorials{
+        height: 1000px;
+    }
+
+    .main__about #width-mobile-manta{
+        width: 85%;
+    }
+    
+    .main__about2 #width-mobile-agarradera{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    .main__background__index--tutorials{
+        height: 1000px;
+    }
+
+    .main__about #width-mobile-manta{
+        width: 80%;
+        height: 350px;
+    }
+
+    .main__about2 #width-mobile-agarradera{
+        width: 80%;
+        height: 350px;
+    }
+}
+
+

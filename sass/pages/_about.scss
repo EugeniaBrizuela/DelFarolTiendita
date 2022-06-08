@@ -14,12 +14,27 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 
     .main__about__image--width1{
         width: 180%;
     }
     
+    // .main__about__image{
+    //     width: 50%;
+    //     margin: $spacing-small;
+    //     border-style: solid;
+    //     border-color: $text-color-primary;
+    //     border-width: $spacing-xxsmall;
+    //     transition: 0.5s;
+
+        
+        
+    //     &:hover{
+    //         box-shadow: 0px 0px 10px $text-color-primary;
+    //     }
+    
+
     .main__parrafo{
         font-size: $text-medium;
         color: $text-color-secundary;
@@ -64,6 +79,168 @@
 
         &-body{
             text-align: center;
+
+            h3{
+                font-size: $text-large;
+                color: $text-color-primary;
+                font-weight: bold;
+            }
+
+            p{
+                font-size: $text-medium;
+                color: $text-color-primary;
+                margin-top: $spacing-small;  
+            }
+
+            .btn{
+                color: $text-base-2;
+                font-size: $text-small;
+                border:#F49F0A solid;
+                margin-top: $spacing-small;
+
+                &-outline-warning{
+                    color: $text-color-primary;
+                }
+            }
         }
     }
+}
+
+@media screen and (min-width: 481px) and (max-width: 978px){
+    
+    .main__about{
+        flex-direction: column;
+        
+        .main__about__image--width1{
+            width: 80%;
+        }
+
+        .main__parrafo{
+            padding-top: $spacing-small;
+            text-align: center;
+            border-top-color: $text-color-secundary;
+            border-top-style: solid;
+            border-top-width: $spacing-xxsmall;
+            padding-left: none;
+            border-left-color: none;
+            border-left-style: none;
+            border-left-width: none;
+        }
+    }
+
+    .main__about2{
+        flex-direction: column;
+        align-items: center;
+
+        .card .card-img-top{
+            width: 310px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
+    
+    .main__background__index--about{
+        height: 1000px;
+
+        .container h1 #title{
+            font-size: $text-medium;
+        }    
+    }
+
+    .main__about{
+        flex-direction: column;
+        
+        .main__about__image--width1{
+            width: 80%;
+        }
+
+        .main__parrafo{
+            font-size: $text-small;
+            padding-top: $spacing-small;
+            text-align: center;
+            border-top-color: $text-color-secundary;
+            border-top-style: solid;
+            border-top-width: $spacing-xxsmall;
+            padding-left: none;
+            border-left-color: none;
+            border-left-style: none;
+            border-left-width: none;
+        } 
+    }
+
+    .main__about2{
+        flex-direction: column;
+        align-items: center;
+
+        .card{
+            width: 260px;
+            margin: $spacing-xxsmall;
+
+            &-img-top{
+                width: 180px;
+                text-align: center;
+            }
+
+            &-body .card-title{
+                font-size: $text-medium;
+            }
+
+            &-body .card-text{
+                font-size: $text-small;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main__background__index--about{
+        height: 1000px;
+    }
+
+    .main__about{
+        flex-direction: column;
+
+        .main__about__image--width1{
+            width: 80%;
+        }
+
+        .main__parrafo{
+            font-size: $text-small;
+            padding-top: $spacing-small;
+            text-align: center;
+            border-top-color: $text-color-secundary;
+            border-top-style: solid;
+            border-top-width: $spacing-xxsmall;
+            padding-left: none;
+            border-left-color: none;
+            border-left-style: none;
+            border-left-width: none;
+        }
+    }
+
+    .main__about2{
+        flex-direction: column;
+        align-items: center;
+
+        .card{
+            width: 250px;
+            margin-top: $spacing-small;
+            margin-bottom: $spacing-xsmall;
+
+            &-img-top{
+                width: 180px;
+                text-align: center;
+            }
+
+            &-body .card-title{
+                font-size: $text-medium;
+            }
+            
+            &-body .card-text{
+                font-size: $text-small;
+            }
+        }
+    }  
 }
