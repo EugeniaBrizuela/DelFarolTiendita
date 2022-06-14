@@ -5,6 +5,7 @@
 /* Misc */
 
 @import "./partials/misc/variables";
+@import "./partials/misc/mixins";
 @import "./partials/misc/normalize";
 
 /* Partials */ 
@@ -21,69 +22,62 @@
     width: 100%;
     background-size: cover;
     border-bottom-style: solid;
-    border-bottom-color: $text-color-primary;
-    border-width: $spacing-xxsmall;
+    border-bottom-color: map-get($colors, primary);
+    border-width: map-get($spacings, xxsmall);
 
     h1{
-        font-size: $text-title;
-        color:$text-color-primary;
+        font-size: map-get($sizes, title);
+        color: map-get($colors, primary);
         font-weight: bold;
         text-align: center;
-        padding: $spacing-border-logo;   
+        padding: map-get($spacings, border-logo);   
     }
 
     h2{
-        font-size: $text-subtitle;
-        color: $text-color-primary;
+        font-size: map-get($sizes, subtitle);
+        color: map-get($colors, primary);
         text-align: center;
-        padding-bottom: $spacing-border-logo;  
+        padding-bottom: map-get($spacings, border-logo);  
     }
 
     .main__welcome{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: $spacing-border-logo;
-        margin-bottom: $spacing-small;
-        margin-left: $spacing-small;
-        margin-right: $spacing-small;
+        @include flex(row, space-between, center);
+        margin-top: map-get($spacings, border-logo);
+        margin-left: map-get($spacings, small);
+        margin-right: map-get($spacings, small);
 
         h3{
-            font-size: $text-large;
-            color: $text-color-primary;
+            font-size: map-get($sizes, large);
+            color: map-get($colors, primary);
             font-weight: bold; 
         }
 
         .main__text{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            margin: $spacing-items-header;
-            padding-left: $spacing-border-logo;
+            @include flex(column, space-around, center);
+            margin: map-get($spacings, items-header);
+            padding-left: map-get($spacings, border-logo);
             border-left-style: solid;
-            border-left-color: $text-color-primary;
-            border-width: $spacing-xxsmall;
+            border-left-color: map-get($colors, primary);
+            border-width: map-get($spacings, xxsmall);
 
             p{
-                font-size: $text-medium;
-                color: $text-color-primary;
-                margin-top: $spacing-small;
+                font-size: map-get($sizes, medium);
+                color: map-get($colors, primary);
+                margin-top: map-get($spacings, small);
             }
 
             .btn{
-                color: $text-base-2;
-                font-size: $text-small;
-                border:#F49F0A solid;
-                margin-top: $spacing-small;
+                color: map-get($colors, base-2);
+                font-size: map-get($sizes, small);
+                border: map-get($colors, base-2) solid;
+                margin-top: map-get($spacings, small);
 
                 &:hover{
-                    color:$text-color-primary;
+                    color: map-get($colors, primary);
                 }
 
                 &-outline-warning{
-                    color: $text-color-primary;
+                    color: map-get($colors, primary);
                 }
             }
         }
@@ -91,33 +85,33 @@
 }
 
 .main__background__primary{
-    background-color: $text-base-2;
+    background-color: map-get($colors, base-2);
     background-size: cover;
     border-bottom-style: solid ;
-    border-bottom-color: $text-color-primary;
-    border-width: $spacing-xxsmall;
+    border-bottom-color: map-get($colors, primary);
+    border-width: map-get($spacings, xxsmall);
 
     .grid__area{
         display: grid;
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: .8fr .3fr .8fr .3fr .1fr .9fr .8fr .1fr;
-        margin-left: $spacing-small;
-        margin-right: $spacing-small;
+        margin-left: map-get($spacings, small);
+        margin-right: map-get($spacings, small);
         justify-items: center;
         justify-content: center;
 
         .main__titulo{
             grid-column: 6 / 12;
             grid-row: 5 / 6;
-            font-size: $text-large;
-            color: $text-color-secundary;
+            font-size: map-get($sizes, large);
+            color: map-get($colors, secondary);
             font-weight: bold;
         }
 
         .main__image{
             border-style: solid;
-            border-color: $text-color-primary;
-            border-width: $spacing-xxsmall;
+            border-color: map-get($colors, primary);
+            border-width: map-get($spacings, xxsmall);
         }
 
         #img_bolso{
@@ -132,7 +126,7 @@
             grid-column: 6 / 12;
             grid-row: 1 / 4;
             width: 80% ;
-            margin-top: $spacing-small;
+            margin-top: map-get($spacings, small);
         }
         
         #img_osi{
@@ -165,50 +159,46 @@
     }
 
     .btn{
-        color: $text-base-2;
-        font-size: $text-small;
-        border:#F49F0A solid;
-        margin-top: $spacing-small;
+        color: map-get($colors, base-2);
+        font-size: map-get($sizes, small);
+        border: map-get($colors, base-2) solid;
+        margin-top: map-get($spacings, small);
 
         &-outline-warning{
-            color: $text-color-primary;
+            color: map-get($colors, primary);
         }
     }
 }
 
 .main__background__primary--color2{
-    background-color: $text-base-1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
+    @extend .main__background__primary;
+    background-color: map-get($colors, base-1);
+    @include flex(row, space-around, start);
     align-content: center;
 
     .main__tutorials{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: $spacing-small;
+        @include flex(column, start, center);
+        margin: map-get($spacings, small);
         border-right-style: solid;
-        border-right-color: $text-color-primary;
-        border-right-width: $spacing-xxsmall;
-        padding: $spacing-xsmall;
+        border-right-color: map-get($colors, primary);
+        border-right-width: map-get($spacings, xxsmall);
+        padding: map-get($spacings, xsmall);
         
         h3{
-            font-size: $text-large;
-            color: $text-color-primary;
+            font-size: map-get($sizes, large);
+            color: map-get($colors, primary);
             font-weight: bold;
         }
 
         ol{
-            font-size: $text-medium;
+            font-size: map-get($sizes, medium);
             text-align: center;
-            margin: $spacing-small;
+            margin: map-get($spacings, small);
 
             .tutorial__item{
                 text-decoration: none;
                 font-weight: bold;
-                color: $text-color-primary;
+                color: map-get($colors, primary);
                 transition: all 1s text-decoration;
 
                 &:hover{
@@ -219,34 +209,33 @@
 
         .main__image{
             border-style: solid;
-            border-color: $text-color-primary;
-            border-width: $spacing-xxsmall;
+            border-color: map-get($colors, primary);
+            border-width: map-get($spacings, xxsmall);
         }
         
         .btn{
-            color: $text-base-2;
-            font-size: $text-small;
-            border:#F49F0A solid;
-            margin-top: $spacing-small;
+            color: map-get($colors, base-2);
+            font-size: map-get($sizes, small);
+            border: map-get($colors, base-2) solid;
+            margin-top: map-get($spacings, small);
 
             &-outline-warning{
-                color: $text-color-primary;
+                color: map-get($colors, primary);
             }
         }
     }
 
     .main__tutorials--modified{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: $spacing-small;
+        @extend .main__tutorials;
+        @include flex(column, start, center);
+        margin: map-get($spacings, small);
         border-right-style: none;
-        padding: $spacing-xxsmall;
+        padding: map-get($spacings, xxsmall);
 
         p{
-            font-size: $text-medium;
-            color: $text-color-primary;
-            margin-top: $spacing-small;
+            font-size: map-get($sizes, medium);
+            color: map-get($colors, primary);
+            margin-top: map-get($spacings, small);
         }
     }
 }
@@ -263,9 +252,9 @@
             padding-left: none;
             border-left-style: none;
             border-left-color: none;
-            padding-top: $spacing-xxsmall;
+            padding-top: map-get($spacings, xxsmall);
             border-top-style: solid;
-            border-top-color: $text-color-primary;
+            border-top-color: map-get($colors, primary);
         }    
     }
     
@@ -280,23 +269,23 @@
         flex-direction: column;
         
         h3{
-            font-size: $text-medium;
+            font-size: map-get($sizes, medium);
         }
         
         .main__text{
             padding-left: none;
             border-left-style: none;
             border-left-color: none;
-            padding-top: $spacing-xxsmall;
+            padding-top: map-get($spacings, xxsmall);
             border-top-style: solid;
-            border-top-color: $text-color-primary;
+            border-top-color: map-get($colors, primary);
             
             p{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
             
             .btn{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
         }   
     }
@@ -318,7 +307,7 @@
             grid-column:  1 / 3;
             grid-row: 2 / 3;
             width: 120%;
-            margin-left: $spacing-small;
+            margin-left: map-get($sizes, small);
             justify-self: start;
         }
         
@@ -327,7 +316,7 @@
             grid-column: 3 / 7;
             grid-row: 1 / 4;
             width: 70% ;
-            margin-top: $spacing-small;
+            margin-top: map-get($sizes, small);
             justify-self: end;       
         }
     
@@ -370,11 +359,11 @@
             border-right-color: none;
             border-right-width: none;
             border-bottom-style: solid;
-            border-bottom-color: $text-color-primary;
-            border-bottom-width: $spacing-xxsmall;
+            border-bottom-color: map-get($colors, primary);
+            border-bottom-width: map-get($sizes, xxsmall);
             
             ol{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
             
             #tejiendo{
@@ -394,34 +383,34 @@
 @media screen and (max-width: 320px){
     
     .main__background__index h1{
-        font-size: $text-subtitle;
+        font-size: map-get($sizes, subtitle);
     }
     
     .main__background__index h2{
-        font-size: $text-medium;
+        font-size: map-get($sizes, medium);
     }
     
     .main__background__index .main__welcome{
         flex-direction: column;
         
         h3{
-            font-size: $text-small;
+            font-size: map-get($sizes, small);
         }
 
         .main__text{
             padding-left: none;
             border-left-style: none;
             border-left-color: none;
-            padding-top: $spacing-xxsmall;
+            padding-top: map-get($spacings, xxsmall);
             border-top-style: solid;
-            border-top-color: $text-color-primary;
+            border-top-color: map-get($colors, primary);
             
             p{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
             
             .btn{
-                font-size: $text-xsmall;
+                font-size: map-get($sizes, xsmall);
             }
         }
     }
@@ -433,7 +422,7 @@
         .main__titulo{
             grid-column: 4 / 7;
             grid-row: 7 / 8;
-            font-size: $text-small;
+            font-size: map-get($sizes, small);
             text-align: center;
             justify-self: end;
             align-self: start;
@@ -444,7 +433,7 @@
             grid-column:  1 / 3;
             grid-row: 2 / 3;
             width: 120%;
-            margin-left: $spacing-small;
+            margin-left: map-get($spacings, small);
             justify-self: start;
         }
         
@@ -453,7 +442,7 @@
             grid-column: 3 / 7;
             grid-row: 1 / 4;
             width: 60% ;
-            margin-top: $spacing-small;
+            margin-top: map-get($spacings, small);
             justify-self: end;
         }
         
@@ -496,15 +485,15 @@
             border-right-color: none;
             border-right-width: none;
             border-bottom-style: solid;
-            border-bottom-color: $text-color-primary;
-            border-bottom-width: $spacing-xxsmall;
+            border-bottom-color: map-get($colors, primary);
+            border-bottom-width: map-get($spacings, xxsmall);
             
             h3{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
 
             ol{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
 
             #tejiendo{
@@ -519,7 +508,7 @@
             border-bottom-width: none;
             
             p{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
         }
     }

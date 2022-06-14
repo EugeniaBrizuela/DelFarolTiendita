@@ -1,79 +1,59 @@
 /* About */
 
 .main__background__index--about{
+    @extend .main__background__index;
     background-image: url(../img/Manta.jpg);
     height: 750px;
 }
 
 .main__about{
-    background-color: $text-base-2;
+    background-color: map-get($colors, base-2);
     background-size: cover;
     border-bottom-style: solid;
-    border-bottom-color: $text-color-primary;
-    border-width: $spacing-xxsmall;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    border-bottom-color: map-get($colors, primary);
+    border-width: map-get($spacings, xxsmall);
+    @include flex(row, space-around, center);
 
     .main__about__image--width1{
         width: 180%;
     }
-    
-    // .main__about__image{
-    //     width: 50%;
-    //     margin: $spacing-small;
-    //     border-style: solid;
-    //     border-color: $text-color-primary;
-    //     border-width: $spacing-xxsmall;
-    //     transition: 0.5s;
-
-        
-        
-    //     &:hover{
-    //         box-shadow: 0px 0px 10px $text-color-primary;
-    //     }
-    
 
     .main__parrafo{
-        font-size: $text-medium;
-        color: $text-color-secundary;
-        margin: $spacing-small;
-        padding-left: $spacing-small;
+        font-size: map-get($sizes, medium);
+        color: map-get($colors, secondary);
+        margin: map-get($spacings, small);
+        padding-left: map-get($spacings, small);
         text-align: left;
-        border-left-color: $text-color-secundary;
+        border-left-color: map-get($colors, secondary);
         border-left-style: solid;
-        border-left-width: $spacing-xxsmall;
+        border-left-width: map-get($spacings, xxsmall);
     }    
 }
 
 .main__about2{
-    background-color: $text-base-1;
+    background-color: map-get($colors, base-1);
     background-size: cover;
     border-bottom-style: solid;
-    border-bottom-color: $text-color-primary;
-    border-width: $spacing-xxsmall;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
+    border-bottom-color: map-get($colors, primary);
+    border-width: map-get($spacings, xxsmall);
+    @include flex(row, space-around, start);
 
     .card{
-        margin: $spacing-small;
+        margin: map-get($spacings, small);
         width: 400px;
-        background-color: $text-base-1;
+        background-color: map-get($colors, base-1);
         transition: 0.6s;
 
         &:hover{
-            box-shadow: 0px 0px 10px $text-color-primary;
+            box-shadow: 0px 0px 10px map-get($colors, primary);
         }
 
         &-img-top{
-            margin: $spacing-small;
+            margin: map-get($spacings, small);
             text-align: center;
-            border-color: $text-color-primary;
+            border-color: map-get($colors, primary);
             border-style: solid;
-            border-width: $spacing-xxsmall;
+            border-width: map-get($spacings, xxsmall);
             width: 330px;
         }
 
@@ -81,25 +61,25 @@
             text-align: center;
 
             h3{
-                font-size: $text-large;
-                color: $text-color-primary;
+                font-size: map-get($sizes, large);
+                color: map-get($colors, primary);
                 font-weight: bold;
             }
 
             p{
-                font-size: $text-medium;
-                color: $text-color-primary;
-                margin-top: $spacing-small;  
+                font-size: map-get($sizes, medium);
+                color: map-get($colors, primary);
+                margin-top: map-get($spacings, small);  
             }
 
             .btn{
-                color: $text-base-2;
-                font-size: $text-small;
-                border:#F49F0A solid;
-                margin-top: $spacing-small;
+                color: map-get($colors, base-2);
+                font-size: map-get($sizes, small);
+                border: map-get($colors, base-2) solid;
+                margin-top: map-get($spacings, small);
 
                 &-outline-warning{
-                    color: $text-color-primary;
+                    color: map-get($colors, primary);
                 }
             }
         }
@@ -111,18 +91,18 @@
 @media screen and (min-width: 481px) and (max-width: 978px){
     
     .main__about{
-        flex-direction: column;
+        @include flex(column, space-around, center);
         
         .main__about__image--width1{
             width: 80%;
         }
 
         .main__parrafo{
-            padding-top: $spacing-small;
+            padding-top: map-get($spacings, small);
             text-align: center;
-            border-top-color: $text-color-secundary;
+            border-top-color: map-get($colors, secondary);
             border-top-style: solid;
-            border-top-width: $spacing-xxsmall;
+            border-top-width: map-get($spacings, xxsmall);
             padding-left: none;
             border-left-color: none;
             border-left-style: none;
@@ -131,8 +111,7 @@
     }
 
     .main__about2{
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, space-around, center);
 
         .card .card-img-top{
             width: 310px;
@@ -147,24 +126,24 @@
         height: 1000px;
 
         .container h1 #title{
-            font-size: $text-medium;
+            font-size: map-get($sizes, medium);
         }    
     }
 
     .main__about{
-        flex-direction: column;
+        @include flex(column, space-around, center);
         
         .main__about__image--width1{
             width: 80%;
         }
 
         .main__parrafo{
-            font-size: $text-small;
-            padding-top: $spacing-small;
+            font-size: map-get($sizes, small);
+            padding-top: map-get($spacings, small);
             text-align: center;
-            border-top-color: $text-color-secundary;
+            border-top-color: map-get($colors, secondary);
             border-top-style: solid;
-            border-top-width: $spacing-xxsmall;
+            border-top-width: map-get($spacings, xxsmall);
             padding-left: none;
             border-left-color: none;
             border-left-style: none;
@@ -173,12 +152,11 @@
     }
 
     .main__about2{
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, space-around, center);
 
         .card{
             width: 260px;
-            margin: $spacing-xxsmall;
+            margin: map-get($spacings, xxsmall);
 
             &-img-top{
                 width: 180px;
@@ -186,11 +164,11 @@
             }
 
             &-body .card-title{
-                font-size: $text-medium;
+                font-size: map-get($sizes, medium);
             }
 
             &-body .card-text{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
         }
     }
@@ -202,19 +180,19 @@
     }
 
     .main__about{
-        flex-direction: column;
+        @include flex(column, space-around, center);
 
         .main__about__image--width1{
             width: 80%;
         }
 
         .main__parrafo{
-            font-size: $text-small;
-            padding-top: $spacing-small;
+            font-size: map-get($sizes, small);
+            padding-top: map-get($spacings, small);
             text-align: center;
-            border-top-color: $text-color-secundary;
+            border-top-color: map-get($colors, secondary);
             border-top-style: solid;
-            border-top-width: $spacing-xxsmall;
+            border-top-width: map-get($spacings, xxsmall);
             padding-left: none;
             border-left-color: none;
             border-left-style: none;
@@ -223,13 +201,12 @@
     }
 
     .main__about2{
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, space-around, center);
 
         .card{
             width: 250px;
-            margin-top: $spacing-small;
-            margin-bottom: $spacing-xsmall;
+            margin-top: map-get($spacings, small);
+            margin-bottom: map-get($spacings, xsmall);
 
             &-img-top{
                 width: 180px;
@@ -237,11 +214,11 @@
             }
 
             &-body .card-title{
-                font-size: $text-medium;
+                font-size: map-get($sizes, medium);
             }
             
             &-body .card-text{
-                font-size: $text-small;
+                font-size: map-get($sizes, small);
             }
         }
     }  

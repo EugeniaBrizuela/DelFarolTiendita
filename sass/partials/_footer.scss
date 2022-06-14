@@ -1,40 +1,37 @@
 /* Footer */
 
 footer {
-    background-color: $text-base-2;
-    color: $text-color-secundary;
+    background-color: map-get($colors, base-2);
+    color: map-get($colors, secondary);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(column, space-around, center);
 
     .footer__title{
-        font-size: $text-title;
-        color: $text-color-secundary;
-        margin-bottom: $spacing-xxsmall;
-        padding: $spacing-small;
+        font-size: map-get($sizes, title);
+        color: map-get($colors, secondary);
+        margin-bottom: map-get($spacings, xxsmall);
+        padding: map-get($spacings, small);
         text-align: center;
     }
 
     nav a{
-        margin: $spacing-border-button;
-        padding: $spacing-xxsmall;
+        margin: map-get($spacings, border-button);
+        padding: map-get($spacings, xxsmall);
     }
 
     h4{
-        font-size: $text-small;
-        color: $text-color-secundary;
-        padding: $spacing-xsmall;  
+        font-size: map-get($sizes, small);
+        color: map-get($colors, secondary);
+        padding: map-get($spacings, xsmall);  
         text-align: center; 
     }
     
     h5{
-        font-size: $text-xsmall;
-        color: $text-color-secundary;
+        font-size: map-get($sizes, xsmall);
+        color: map-get($colors, secondary);
         text-align: center;
-        padding: $spacing-xsmall;
-        margin-bottom: $spacing-small;
+        padding: map-get($spacings, xsmall);
+        margin-bottom: map-get($spacings, small);
     }
 }
 
@@ -43,24 +40,24 @@ footer {
 @media screen and (min-width: 321px) and (max-width: 480px){
     
     footer .footer__title{
-        font-size: $text-title-footer;
+        font-size: map-get($sizes, title-footer);
         text-align: center;
     }
 
     footer h4{
-        font-size: $text-xsmall;
+        font-size: map-get($sizes, xsmall);
     }
 }
 
 @media screen and (max-width: 320px){
 
     footer .footer__title{
-        font-size: $text-title-footer;
+        font-size: map-get($sizes, title-footer);
         text-align: center;
     }
     
     footer h4{
-        font-size: $text-xsmall;
+        font-size: map-get($sizes, xsmall);
     }
 }
 

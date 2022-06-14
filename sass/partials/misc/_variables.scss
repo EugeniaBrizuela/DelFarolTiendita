@@ -1,37 +1,54 @@
 /* Variables */
 
 /* Colors */
-$text-color-primary:#594E36;
-$text-color-primary-trans:#e7b444;
-$text-color-secundary: #FFFDED;
-$text-base-1:#FFFDED;
-$text-base-2:#F49F0A;
-$color-button-1:#f49e0a68;
-$color-button-2:#fffded5c;
+$colors:(
+    primary: #594E36,
+    primary-trans: #e7b444,
+    secondary: #FFFDED,
+    base-1: #FFFDED,
+    base-2: #F49F0A,
+    button-1: #f49e0a68,
+    button-2: #fffded5c
+);
+
+@each $colors, $value in $colors {
+    .#{$colors} {
+        color: #{$value};
+    }
+}
 
 /* Spacing */
-$spacing-small: 3rem;
-$spacing-xsmall:1.5rem;
-$spacing-xxsmall: 0.05rem;
-$spacing-items-header: 1.2em;
-$spacing-items-header-mobile: 1rem;
-$spacing-border-logo: 8.5rem;
-$spacing-border-button: 0.5rem;
-
+$spacings: (
+    small: 3rem,
+    xsmall: 1.5rem,
+    xxsmall: 0.05rem,
+    items-header: 1.2rem,
+    items-header-mobile: 1rem,
+    border-logo: 8.5rem,
+    border-button: 0.5rem 
+);
 
 /* Fonts-family */
 $font-principal:'Darker Grotesque', sans-serif;
 
 /* Font-sizes */
-$text-title: 9em;
-$text-title-mobile: 6em;
-$text-title-footer: 3.6em;
-$text-subtitle: 5em;
-$text-items-header: 2.3em;
-$text-large: 3.5em;
-$text-medium: 3em;
-$text-small: 2.2em;
-$text-xsmall: 1.6em;
-$text-xxsmall: 1.3em;
-$text-xxxsmall: 1em;
-$text-items-header-2: 1.9em;
+$sizes: (
+    title: 9em,
+    title-mobile: 6em,
+    title-footer: 3.6em,
+    subtitle: 5em,
+    items-header: 2.3em,
+    items-header-2: 1.9em,
+    large: 3.5em,
+    medium: 3em,
+    small: 2.2em,
+    xsmall: 1.6em,
+    xxsmall: 1.3em,
+    xxxsmall: 1em 
+);
+
+@each $sizes, $value in $sizes {
+    .#{$sizes} {
+        size: #{$value};
+    }
+}

@@ -1,60 +1,61 @@
 /* Contacto*/
 
 .main__background__index--contact{
+    @extend .main__background__index;
     background-image: url(../img/contact.jpg);
     height: 750px;
 }
 
 .main__background__contact1{
-    background-color: $text-base-2;
+    background-color: map-get($colors, base-2);
     height: 620px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include flex(column, space-evenly, start);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
     border-bottom-style: solid;
-    border-bottom-color: $text-color-primary;
-    border-width: $spacing-xxsmall;
-    align-items: start;
-    padding: $spacing-small;
+    border-bottom-color: map-get($colors, primary);
+    border-width: map-get($spacings, xxsmall);
+    // align-items: start;
+    padding: map-get($spacings, small);
 
     .color__2{
-        font-size: $text-large;
-        color: $text-color-secundary;
+        font-size: map-get($sizes, large);
+        color: map-get($colors, secondary);
         font-weight: bold;
     }
 
     .form-floating{
-        font-size: $text-xsmall;
+        font-size:  map-get($sizes, xsmall);
 
         .form-control{
-            border-color: $text-color-primary;
-            font-size: $text-xsmall;
-            margin-bottom: $spacing-xsmall;
+            border-color: map-get($colors, primary);
+            font-size:  map-get($sizes, xsmall);
+            margin-bottom: map-get($spacings, xsmall);
         }
     }
 
     .btn{
-        color: $text-base-2;
-        font-size: $text-small;
-        border:#F49F0A solid;
-        margin-top: $spacing-small;
+        color: map-get($colors, base-2);
+        font-size:  map-get($sizes, small);
+        border: map-get($colors, base-2) solid;
+        margin-top: map-get($spacings, small);
 
         &-outline-warning{
-            color: $text-color-primary;
+            color: map-get($colors, primary);
         }
     }
 }
 
 .main__background__contact1--modified{
-    background-color: $text-base-1;
+    @extend .main__background__contact1;
+    background-color: map-get($colors, base-1);
     height: 620px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include flex(column, space-evenly, flex-start);
     
     h3{
-        font-size: $text-large;
-        color: $text-color-primary;
+        font-size:  map-get($sizes, large);
+        color: map-get($colors, primary);
         font-weight: bold; 
     }
 }
@@ -64,17 +65,17 @@
 @media screen and (min-width: 481px) and (max-width: 978px){
     
     .main__background__contact1{
-        align-items: center;
+        @include flex(column, space-evenly, center);
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px){
         
     .main__background__contact1{
-        align-items: center;
+        @include flex(column, space-evenly, center);
 
         .container .form-floating .form-control{
-            font-size: $text-xxsmall;
+            font-size:  map-get($sizes, xxsmall);
         }
     }
 }
@@ -82,10 +83,18 @@
 @media screen and (max-width: 320px){
     
     .main__background__contact1{
-        align-items: center;
+        @include flex(column, space-evenly, center);
+
+        .color__2{
+            font-size: map-get($sizes, medium);
+        }
         
         .container .form-floating .form-control{
-            font-size: $text-xxxsmall;
+            font-size:  map-get($sizes, xxxsmall);
         }
+    }
+
+    .main__background__contact1--modified h3{
+        font-size:  map-get($sizes, medium);
     }
 }

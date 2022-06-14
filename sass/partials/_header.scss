@@ -5,53 +5,48 @@
     width: 100%;
     background-size: cover;
     border-bottom-style: solid;
-    border-bottom-color: $text-color-primary;
-    border-width: $spacing-xxsmall;
+    border-bottom-color: map-get($colors, primary);
+    border-width: map-get($spacings, xxsmall);
 
     .main__header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
+        @include flex(row, space-between, flex-start);
         border-bottom-style: solid;
-        border-bottom-color: $text-color-primary;
-        border-width: $spacing-xxsmall;
-    
+        border-bottom-color: map-get($colors, primary);
+        border-width: map-get($spacings, xxsmall);
+
         .header__logo{
             width: 15%;
-            border-radius: $spacing-border-logo ;
-            margin: $spacing-xsmall;
+            border-radius: map-get($spacings, border-logo);
+            margin: map-get($spacings, xsmall);
         }
-    
+
         ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin-top: $spacing-small;
-            margin-left: $spacing-xsmall;
+            @include flex(row, space-evenly, start);
+            margin-top: map-get($spacings, small);
+            margin-left: map-get($spacings, xsmall);
             text-decoration: none;
             list-style: none;
-    
+
             .main__item{
-                font-size: $text-items-header;
+                font-size: map-get($sizes, items-header);
                 text-decoration: none;
-                margin: $spacing-items-header;
-                color: $text-color-primary;
-                border-bottom: $spacing-xxsmall solid transparent;
+                margin: map-get($sizes, items-header);
+                color: map-get($colors, primary);
+                border-bottom: map-get($spacings, xxsmall) solid transparent;
                 transition: all .3s ease-in;
-    
+
                 &:hover{
-                    color: $text-color-primary-trans;
-                    border-bottom-color: $text-color-primary-trans;
+                    color: map-get($colors, primary-trans);
+                    border-bottom-color: map-get($colors, primary-trans);
                     border-bottom-style: solid;
-                    border-bottom-width: $spacing-xxsmall;
+                    border-bottom-width: map-get($spacings, xxsmall);
                 }
             }
-    
+
             .main__item--bold{
+                @extend .main__item;
                 font-weight: bold;
             }
-        
         }
     }
 }
@@ -64,38 +59,36 @@
         width: 20%;
 
         ul{
-            justify-content: flex-start;
+            @include flex (row, flex-start, flex-start);
 
             .main__item{
-                font-size: $text-small;
-                margin: $spacing-items-header-mobile;
+                font-size: map-get($sizes, small);
+                margin: map-get($spacings, items-header-mobile);
             }
         }
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px){
-    
+
     .main__background__index .main__header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
 
         a{
             text-align: center;
 
             .header__logo{
                 width: 20%;
-                margin: $spacing-xxsmall;
+                margin: map-get($spacings, xxsmall);
                 text-align: center;
             }
         }
 
         nav ul .main__item{
             text-align: center;
-            font-size: $text-xsmall;
-            margin: $spacing-border-button;
-            padding: $spacing-items-header-mobile;
+            font-size: map-get($sizes, xsmall);
+            margin: map-get($spacings, border-button);
+            padding: map-get($spacings, items-header-mobile);
         }
     }
 }
@@ -103,16 +96,14 @@
 @media screen and (max-width: 320px){
 
     .main__background__index .main__header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
 
         a{
             text-align: center;
 
             .header__logo{
                 width: 22%;
-                margin: $spacing-xxsmall;
+                margin: map-get($spacings, xxsmall);
                 text-align: center;
             }
         }
@@ -122,9 +113,9 @@
 
             .main__item{
                 text-align: center;
-                font-size: $text-xxsmall;
-                margin: $spacing-border-button;
-                padding: $spacing-border-button;
+                font-size: map-get($sizes, xxsmall);
+                margin: map-get($spacings, border-button);
+                padding: map-get($spacings, border-button);
             }
         }
     }
@@ -135,7 +126,7 @@
 
 
 
-    
+
 
 
 

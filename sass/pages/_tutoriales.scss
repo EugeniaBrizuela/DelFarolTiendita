@@ -1,6 +1,7 @@
 /* Tutoriales */
 
 .main__background__index--tutorials{
+    @extend .main__background__index;
     background-image: url(../img/tutorial.jpg);
     height: 750px;
 }
