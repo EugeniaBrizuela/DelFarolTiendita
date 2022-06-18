@@ -360,7 +360,7 @@
             border-right-width: none;
             border-bottom-style: solid;
             border-bottom-color: map-get($colors, primary);
-            border-bottom-width: map-get($sizes, xxsmall);
+            border-bottom-width: map-get($spacings, xxsmall);
             
             ol{
                 font-size: map-get($sizes, small);

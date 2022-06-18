@@ -70,7 +70,8 @@
   padding: 0; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Darker Grotesque", sans-serif; }
@@ -120,18 +121,32 @@ body {
       .main__background__index .main__header ul .main__item--bold, .main__background__index--about .main__header ul .main__item--bold, .main__background__index--galery .main__header ul .main__item--bold, .main__background__index--tutorials .main__header ul .main__item--bold, .main__background__index--contact .main__header ul .main__item--bold {
         font-weight: bold; }
 
+.uparrow {
+  color: #594E36;
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  line-height: 3em;
+  transition: 0.6s; }
+  .uparrow:hover {
+    box-shadow: 0px 0px 10px #594E36; }
+
 /* Media Queries header */
 @media screen and (min-width: 481px) and (max-width: 978px) {
   .main__background__index .main__header .header__logo, .main__background__index--about .main__header .header__logo, .main__background__index--galery .main__header .header__logo, .main__background__index--tutorials .main__header .header__logo, .main__background__index--contact .main__header .header__logo {
-    width: 20%; }
-    .main__background__index .main__header .header__logo ul, .main__background__index--about .main__header .header__logo ul, .main__background__index--galery .main__header .header__logo ul, .main__background__index--tutorials .main__header .header__logo ul, .main__background__index--contact .main__header .header__logo ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start; }
-      .main__background__index .main__header .header__logo ul .main__item, .main__background__index--about .main__header .header__logo ul .main__item, .main__background__index--galery .main__header .header__logo ul .main__item, .main__background__index--tutorials .main__header .header__logo ul .main__item, .main__background__index--contact .main__header .header__logo ul .main__item, .main__background__index .main__header .header__logo ul .main__item--bold, .main__background__index--about .main__header .header__logo ul .main__item--bold, .main__background__index--galery .main__header .header__logo ul .main__item--bold, .main__background__index--tutorials .main__header .header__logo ul .main__item--bold, .main__background__index--contact .main__header .header__logo ul .main__item--bold {
-        font-size: 2.2em;
-        margin: 1rem; } }
+    width: 50%; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    nav ul .main__item, nav .main__background__index .main__header ul .main__item--bold, .main__background__index .main__header nav ul .main__item--bold, nav .main__background__index--about .main__header ul .main__item--bold, .main__background__index--about .main__header nav ul .main__item--bold, nav .main__background__index--galery .main__header ul .main__item--bold, .main__background__index--galery .main__header nav ul .main__item--bold, nav .main__background__index--tutorials .main__header ul .main__item--bold, .main__background__index--tutorials .main__header nav ul .main__item--bold, nav .main__background__index--contact .main__header ul .main__item--bold, .main__background__index--contact .main__header nav ul .main__item--bold {
+      font-size: 2.2em;
+      margin: 1rem; } }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .main__background__index .main__header, .main__background__index--about .main__header, .main__background__index--galery .main__header, .main__background__index--tutorials .main__header, .main__background__index--contact .main__header {
@@ -149,7 +164,11 @@ body {
       text-align: center;
       font-size: 1.6em;
       margin: 0.5rem;
-      padding: 1rem; } }
+      padding: 1rem; }
+  .uparrow {
+    bottom: 0.05rem;
+    right: 0.05rem;
+    line-height: 1.6em; } }
 
 @media screen and (max-width: 320px) {
   .main__background__index .main__header, .main__background__index--about .main__header, .main__background__index--galery .main__header, .main__background__index--tutorials .main__header, .main__background__index--contact .main__header {
@@ -169,7 +188,11 @@ body {
         text-align: center;
         font-size: 1.3em;
         margin: 0.5rem;
-        padding: 0.5rem; } }
+        padding: 0.5rem; }
+  .uparrow {
+    bottom: 0.05rem;
+    right: 0.05rem;
+    line-height: 1.3em; } }
 
 /* Footer */
 footer {
@@ -474,7 +497,7 @@ footer {
       border-right-width: none;
       border-bottom-style: solid;
       border-bottom-color: #594E36;
-      border-bottom-width: 1.3em; }
+      border-bottom-width: 0.05rem; }
       .main__background__primary--color2 .main__tutorials ol, .main__background__primary--color2 .main__tutorials--modified ol {
         font-size: 2.2em; }
       .main__background__primary--color2 .main__tutorials #tejiendo, .main__background__primary--color2 .main__tutorials--modified #tejiendo {
