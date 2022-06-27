@@ -1,4 +1,4 @@
-/* Tutoriales */
+/* TUTORIALS */
 
 .main__background__index--tutorials{
     @extend .main__background__index;
@@ -6,7 +6,9 @@
     height: 750px;
 }
 
-/* Media Queries tutoriales */
+/* MEDIA QUERIES TUTORIALS */
+
+/* TABLET */
 
 @media screen and (min-width: 481px) and (max-width: 978px){
     
@@ -14,6 +16,8 @@
         height: 900px;
     }
 }
+
+/* MOBILE */
 
 @media screen and (min-width: 321px) and (max-width: 480px){
     
@@ -29,6 +33,8 @@
         width: 85%;
     }
 }
+
+/* MOBILE SMALL */
 
 @media screen and (max-width: 320px){
     

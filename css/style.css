@@ -77,7 +77,7 @@ body {
   font-family: "Darker Grotesque", sans-serif; }
 
 /* Partials */
-/* Header */
+/* HEADER */
 .main__background__index, .main__background__index--about, .main__background__index--galery, .main__background__index--tutorials, .main__background__index--contact {
   background-image: url(../img/conejos.jpg);
   width: 100%;
@@ -135,7 +135,8 @@ body {
   .uparrow:hover {
     box-shadow: 0px 0px 10px #594E36; }
 
-/* Media Queries header */
+/* MEDIA QUERIES HEADER */
+/* TABLET */
 @media screen and (min-width: 481px) and (max-width: 978px) {
   .main__background__index .main__header .header__logo, .main__background__index--about .main__header .header__logo, .main__background__index--galery .main__header .header__logo, .main__background__index--tutorials .main__header .header__logo, .main__background__index--contact .main__header .header__logo {
     width: 50%; }
@@ -148,6 +149,7 @@ body {
       font-size: 2.2em;
       margin: 1rem; } }
 
+/* MOBILE */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .main__background__index .main__header, .main__background__index--about .main__header, .main__background__index--galery .main__header, .main__background__index--tutorials .main__header, .main__background__index--contact .main__header {
     display: flex;
@@ -170,6 +172,7 @@ body {
     right: 0.05rem;
     line-height: 1.6em; } }
 
+/* MOBILE SMALL */
 @media screen and (max-width: 320px) {
   .main__background__index .main__header, .main__background__index--about .main__header, .main__background__index--galery .main__header, .main__background__index--tutorials .main__header, .main__background__index--contact .main__header {
     display: flex;
@@ -194,7 +197,7 @@ body {
     right: 0.05rem;
     line-height: 1.3em; } }
 
-/* Footer */
+/* FOOTER */
 footer {
   background-color: #F49F0A;
   color: #FFFDED;
@@ -224,7 +227,8 @@ footer {
     padding: 1.5rem;
     margin-bottom: 3rem; }
 
-/* Media Queries footer */
+/* MEDIA QUERIES FOOTER */
+/* MOBILE */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   footer .footer__title {
     font-size: 3.6em;
@@ -232,6 +236,7 @@ footer {
   footer h4 {
     font-size: 1.6em; } }
 
+/* MOBILE SMALL */
 @media screen and (max-width: 320px) {
   footer .footer__title {
     font-size: 3.6em;
@@ -240,7 +245,7 @@ footer {
     font-size: 1.6em; } }
 
 /* Pages */
-/* Index */
+/* INDEX */
 .main__background__index, .main__background__index--about, .main__background__index--galery, .main__background__index--tutorials, .main__background__index--contact {
   background-image: url(../img/conejos.jpg);
   width: 100%;
@@ -414,7 +419,8 @@ footer {
       color: #594E36;
       margin-top: 3rem; }
 
-/* Media Queries index*/
+/* MEDIA QUERIES INDEX */
+/* TABLET */
 @media screen and (min-width: 481px) and (max-width: 978px) {
   .main__background__index .main__welcome, .main__background__index--about .main__welcome, .main__background__index--galery .main__welcome, .main__background__index--tutorials .main__welcome, .main__background__index--contact .main__welcome {
     flex-direction: column; }
@@ -428,6 +434,7 @@ footer {
   .main__background__primary--color2 .main__tutorials #tejiendo, .main__background__primary--color2 .main__tutorials--modified #tejiendo {
     width: 100%; } }
 
+/* MOBILE */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .main__background__index .main__welcome, .main__background__index--about .main__welcome, .main__background__index--galery .main__welcome, .main__background__index--tutorials .main__welcome, .main__background__index--contact .main__welcome {
     flex-direction: column; }
@@ -508,6 +515,7 @@ footer {
       border-bottom-color: none;
       border-bottom-width: none; } }
 
+/* MOBILE SMALL */
 @media screen and (max-width: 320px) {
   .main__background__index h1, .main__background__index--about h1, .main__background__index--galery h1, .main__background__index--tutorials h1, .main__background__index--contact h1 {
     font-size: 5em; }
@@ -597,7 +605,7 @@ footer {
       .main__background__primary--color2 .main__tutorials--modified p {
         font-size: 2.2em; } }
 
-/* About */
+/* ABOUT */
 .main__background__index--about {
   background-image: url(../img/Manta.jpg);
   height: 750px; }
@@ -666,7 +674,8 @@ footer {
         .main__about2 .card-body .btn-outline-warning {
           color: #594E36; }
 
-/* Media Queries about */
+/* MEDIA QUERIES ABOUT */
+/* TABLET */
 @media screen and (min-width: 481px) and (max-width: 978px) {
   .main__about {
     display: flex;
@@ -694,6 +703,7 @@ footer {
       width: 310px;
       text-align: center; } }
 
+/* MOBILE */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .main__background__index--about {
     height: 1000px; }
@@ -733,6 +743,7 @@ footer {
       .main__about2 .card-body .card-text {
         font-size: 2.2em; } }
 
+/* MOBILE SMALL */
 @media screen and (max-width: 320px) {
   .main__background__index--about {
     height: 1000px; }
@@ -771,7 +782,7 @@ footer {
       .main__about2 .card-body .card-text {
         font-size: 2.2em; } }
 
-/* Galeria */
+/* GALERY */
 .main__background__index--galery {
   background-image: url(../img/galeria.jpg);
   height: 750px; }
@@ -978,7 +989,8 @@ footer {
 .main__about__image--width {
   width: 70%; }
 
-/*Media Queries galeria */
+/* MEDIA QUERIES GALERY */
+/* TABLET */
 @media screen and (min-width: 481px) and (max-width: 978px) {
   .main__backgroud__galery__grid .grid__area__galery {
     grid-template-columns: repeat(10, 1fr);
@@ -1113,6 +1125,7 @@ footer {
   .main__about__image--width {
     width: 50%; } }
 
+/* MOBILE */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .main__backgroud__galery__grid .grid__area__galery {
     grid-template-columns: repeat(7, 1fr);
@@ -1241,6 +1254,7 @@ footer {
   .main__about__image--width {
     width: 60%; } }
 
+/* MOBILE SMALL */
 @media screen and (max-width: 320px) {
   .main__backgroud__galery__grid .grid__area__galery {
     grid-template-columns: repeat(7, 1fr);
@@ -1371,16 +1385,18 @@ footer {
   .main__about__image--width {
     width: 60%; } }
 
-/* Tutoriales */
+/* TUTORIALS */
 .main__background__index--tutorials {
   background-image: url(../img/tutorial.jpg);
   height: 750px; }
 
-/* Media Queries tutoriales */
+/* MEDIA QUERIES TUTORIALS */
+/* TABLET */
 @media screen and (min-width: 481px) and (max-width: 978px) {
   .main__background__index--tutorials {
     height: 900px; } }
 
+/* MOBILE */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .main__background__index--tutorials {
     height: 1000px; }
@@ -1389,6 +1405,7 @@ footer {
   .main__about2 #width-mobile-agarradera {
     width: 85%; } }
 
+/* MOBILE SMALL */
 @media screen and (max-width: 320px) {
   .main__background__index--tutorials {
     height: 1000px; }
@@ -1399,7 +1416,7 @@ footer {
     width: 80%;
     height: 350px; } }
 
-/* Contacto*/
+/* CONTACT */
 .main__background__index--contact {
   background-image: url(../img/contact.jpg);
   height: 750px; }
@@ -1445,7 +1462,8 @@ footer {
     color: #594E36;
     font-weight: bold; }
 
-/* Media Queries contacto */
+/* MEDIA QUERIES CONTACT */
+/* TABLET */
 @media screen and (min-width: 481px) and (max-width: 978px) {
   .main__background__contact1, .main__background__contact1--modified {
     display: flex;
@@ -1453,6 +1471,7 @@ footer {
     justify-content: space-evenly;
     align-items: center; } }
 
+/* MOBILE */
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .main__background__contact1, .main__background__contact1--modified {
     display: flex;
@@ -1462,6 +1481,7 @@ footer {
     .main__background__contact1 .container .form-floating .form-control, .main__background__contact1--modified .container .form-floating .form-control {
       font-size: 1.3em; } }
 
+/* MOBILE SMALL */
 @media screen and (max-width: 320px) {
   .main__background__contact1, .main__background__contact1--modified {
     display: flex;

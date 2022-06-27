@@ -1,4 +1,4 @@
-/* About */
+/* ABOUT */
 
 .main__background__index--about{
     @extend .main__background__index;
@@ -86,7 +86,9 @@
     }
 }
 
-/* Media Queries about */
+/* MEDIA QUERIES ABOUT */
+
+/* TABLET */
 
 @media screen and (min-width: 481px) and (max-width: 978px){
     
@@ -119,6 +121,8 @@
         }
     }
 }
+
+/* MOBILE */
 
 @media screen and (min-width: 321px) and (max-width: 480px){
     
@@ -173,6 +177,8 @@
         }
     }
 }
+
+/* MOBILE SMALL */
 
 @media screen and (max-width: 320px){
     .main__background__index--about{

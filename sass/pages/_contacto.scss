@@ -1,4 +1,4 @@
-/* Contacto*/
+/* CONTACT */
 
 .main__background__index--contact{
     @extend .main__background__index;
@@ -60,7 +60,9 @@
     }
 }
 
-/* Media Queries contacto */
+/* MEDIA QUERIES CONTACT */
+
+/* TABLET */
 
 @media screen and (min-width: 481px) and (max-width: 978px){
     
@@ -68,6 +70,8 @@
         @include flex(column, space-evenly, center);
     }
 }
+
+/* MOBILE */
 
 @media screen and (min-width: 321px) and (max-width: 480px){
         
@@ -79,6 +83,8 @@
         }
     }
 }
+
+/* MOBILE SMALL */
 
 @media screen and (max-width: 320px){
     

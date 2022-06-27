@@ -1,4 +1,4 @@
-/* Header */
+/* HEADER */
 
 .main__background__index{
     background-image: url(../img/conejos.jpg);
@@ -68,7 +68,9 @@
     }
 }
 
-/* Media Queries header */
+/* MEDIA QUERIES HEADER */
+
+/* TABLET */
 
 @media screen and (min-width: 481px) and (max-width: 978px){
 
@@ -86,6 +88,8 @@
         }
     }
 }
+
+/* MOBILE */
 
 @media screen and (min-width: 321px) and (max-width: 480px){
 
@@ -116,6 +120,8 @@
         line-height: map-get($sizes , xsmall);
     }
 }
+
+/* MOBILE SMALL */
 
 @media screen and (max-width: 320px){
 

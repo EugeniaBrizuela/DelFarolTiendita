@@ -1,4 +1,4 @@
-/* Footer */
+/* FOOTER */
 
 footer {
     background-color: map-get($colors, base-2);
@@ -35,7 +35,9 @@ footer {
     }
 }
 
-/* Media Queries footer */
+/* MEDIA QUERIES FOOTER */
+
+/* MOBILE */
 
 @media screen and (min-width: 321px) and (max-width: 480px){
     
@@ -48,6 +50,8 @@ footer {
         font-size: map-get($sizes, xsmall);
     }
 }
+
+/* MOBILE SMALL */
 
 @media screen and (max-width: 320px){
 

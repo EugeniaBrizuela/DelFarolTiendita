@@ -15,7 +15,7 @@
 
 /* Pages */
 
-/* Index */
+/* INDEX */
 
 .main__background__index{
     background-image: url(../img/conejos.jpg);
@@ -241,7 +241,9 @@
 }
 
 
-/* Media Queries index*/
+/* MEDIA QUERIES INDEX */
+
+/* TABLET */
 
 @media screen and (min-width: 481px) and (max-width: 978px){
     
@@ -262,6 +264,8 @@
         width: 100%;
     }
 }
+
+/* MOBILE */
 
 @media screen and (min-width: 321px) and (max-width: 480px){
     
@@ -379,6 +383,8 @@
         }
     }   
 }
+
+/* MOBILE SMALL */
 
 @media screen and (max-width: 320px){
     
